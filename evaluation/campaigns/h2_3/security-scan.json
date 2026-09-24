@@ -1,0 +1,9 @@
+{
+  "bytes_scanned": 709512,
+  "files_scanned": 44,
+  "rules": [
+    "configured-secret-exact-match",
+    "openai-key-like-boundary"
+  ],
+  "secret_detected": false
+}

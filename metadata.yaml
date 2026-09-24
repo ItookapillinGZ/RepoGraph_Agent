@@ -1,0 +1,11 @@
+title: code-review-agent
+description: Reviews code using deterministic Ruff/Bandit evidence and an evidence-aware LangGraph workflow
+author: ashishpatel26
+language: python
+framework: langgraph
+tags: [code-review, langgraph, ruff, bandit, security, quality]
+industry: software-development
+difficulty: beginner
+llm: gpt-4o
+entrypoint: agent.py
+requirements: requirements.txt

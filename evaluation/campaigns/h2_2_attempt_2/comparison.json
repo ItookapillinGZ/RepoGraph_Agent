@@ -1,0 +1,435 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260904,
+  "comparison_valid": true,
+  "configs": [
+    {
+      "key": "full",
+      "label": "Full RepoGraph",
+      "metrics": {
+        "average_changed_files": 1.3,
+        "average_correction_rounds": 0.3,
+        "average_cost": null,
+        "average_duration_seconds": 126.44951871000004,
+        "average_input_tokens": 48950.3,
+        "average_llm_calls": 9.1,
+        "average_output_tokens": 1109.9,
+        "average_test_calls": 2.5,
+        "average_tool_calls": 5.6,
+        "average_total_tokens": 50060.2,
+        "candidate_failure_rate": 0.0,
+        "correction_attempted_tasks": 2,
+        "correction_regressed_tasks": 0,
+        "correction_rescue_rate": 0.0,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": null,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 10
+        },
+        "failure_breakdown": {
+          "test_failure": 10
+        },
+        "final_resolve_rate": 0.0,
+        "final_resolved": 0,
+        "first_attempt_resolve_rate": 0.0,
+        "first_attempt_resolved": 0,
+        "hard_timeout_count": 0,
+        "median_changed_files": 1.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 117.60228260000031,
+        "median_llm_calls": 8.5,
+        "median_total_tokens": 47806.0,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 10,
+        "resolve_rate": 0.0,
+        "review_failure_rate": 0.0,
+        "tasks_resolved": 0,
+        "tasks_total": 10,
+        "tasks_using_correction": 2,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": 50060.2,
+        "total_input_tokens": 489503,
+        "total_llm_calls": 91,
+        "total_output_tokens": 11099,
+        "total_tokens": 500602,
+        "verification_failure_rate": 0.0
+      },
+      "resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    },
+    {
+      "key": "no_correction",
+      "label": "No Self-Correction",
+      "metrics": {
+        "average_changed_files": 1.4,
+        "average_correction_rounds": 0.0,
+        "average_cost": null,
+        "average_duration_seconds": 73.91991971999997,
+        "average_input_tokens": 42760.1,
+        "average_llm_calls": 8.0,
+        "average_output_tokens": 954.8,
+        "average_test_calls": 2.0,
+        "average_tool_calls": 5.6,
+        "average_total_tokens": 43714.9,
+        "candidate_failure_rate": 0.0,
+        "correction_attempted_tasks": 0,
+        "correction_regressed_tasks": 0,
+        "correction_rescue_rate": null,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": null,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 10
+        },
+        "failure_breakdown": {
+          "test_failure": 10
+        },
+        "final_resolve_rate": 0.0,
+        "final_resolved": 0,
+        "first_attempt_resolve_rate": 0.0,
+        "first_attempt_resolved": 0,
+        "hard_timeout_count": 0,
+        "median_changed_files": 1.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 71.47209154999973,
+        "median_llm_calls": 8.0,
+        "median_total_tokens": 41734.5,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 10,
+        "resolve_rate": 0.0,
+        "review_failure_rate": 0.1,
+        "tasks_resolved": 0,
+        "tasks_total": 10,
+        "tasks_using_correction": 0,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": 43714.9,
+        "total_input_tokens": 427601,
+        "total_llm_calls": 80,
+        "total_output_tokens": 9548,
+        "total_tokens": 437149,
+        "verification_failure_rate": 0.0
+      },
+      "resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    },
+    {
+      "key": "no_exploration",
+      "label": "No Agentic Exploration",
+      "metrics": {
+        "average_changed_files": 0.9,
+        "average_correction_rounds": 0.4,
+        "average_cost": null,
+        "average_duration_seconds": 77.61415454000034,
+        "average_input_tokens": null,
+        "average_llm_calls": 8.571428571428571,
+        "average_output_tokens": null,
+        "average_test_calls": 2.857142857142857,
+        "average_tool_calls": 4.857142857142857,
+        "average_total_tokens": null,
+        "candidate_failure_rate": 0.0,
+        "correction_attempted_tasks": 2,
+        "correction_regressed_tasks": 0,
+        "correction_rescue_rate": 0.0,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": null,
+        "evaluation_failure_rate": 0.3,
+        "evaluator_breakdown": {
+          "local": 10
+        },
+        "failure_breakdown": {
+          "api_infrastructure_failure": 3,
+          "test_failure": 7
+        },
+        "final_resolve_rate": 0.0,
+        "final_resolved": 0,
+        "first_attempt_resolve_rate": 0.0,
+        "first_attempt_resolved": 0,
+        "hard_timeout_count": 0,
+        "median_changed_files": 1.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 66.33496835000005,
+        "median_llm_calls": 7.0,
+        "median_total_tokens": null,
+        "planning_failure_rate": 0.3,
+        "process_isolated_tasks": 10,
+        "resolve_rate": 0.0,
+        "review_failure_rate": 0.3,
+        "tasks_resolved": 0,
+        "tasks_total": 10,
+        "tasks_using_correction": 2,
+        "telemetry_incomplete_tasks": 1,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": null,
+        "total_input_tokens": null,
+        "total_llm_calls": null,
+        "total_output_tokens": null,
+        "total_tokens": null,
+        "verification_failure_rate": 0.0
+      },
+      "resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    },
+    {
+      "key": "no_agentic_test",
+      "label": "No Agentic Test",
+      "metrics": {
+        "average_changed_files": 0.7,
+        "average_correction_rounds": 0.4,
+        "average_cost": null,
+        "average_duration_seconds": 62.40774432000035,
+        "average_input_tokens": null,
+        "average_llm_calls": 9.714285714285714,
+        "average_output_tokens": null,
+        "average_test_calls": 2.7142857142857144,
+        "average_tool_calls": 5.571428571428571,
+        "average_total_tokens": null,
+        "candidate_failure_rate": 0.0,
+        "correction_attempted_tasks": 2,
+        "correction_regressed_tasks": 0,
+        "correction_rescue_rate": 0.0,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": null,
+        "evaluation_failure_rate": 0.3,
+        "evaluator_breakdown": {
+          "local": 10
+        },
+        "failure_breakdown": {
+          "api_infrastructure_failure": 3,
+          "test_failure": 7
+        },
+        "final_resolve_rate": 0.0,
+        "final_resolved": 0,
+        "first_attempt_resolve_rate": 0.0,
+        "first_attempt_resolved": 0,
+        "hard_timeout_count": 0,
+        "median_changed_files": 1.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 48.51642975000141,
+        "median_llm_calls": 8.0,
+        "median_total_tokens": 44466.0,
+        "planning_failure_rate": 0.3,
+        "process_isolated_tasks": 10,
+        "resolve_rate": 0.0,
+        "review_failure_rate": 0.0,
+        "tasks_resolved": 0,
+        "tasks_total": 10,
+        "tasks_using_correction": 2,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": null,
+        "total_input_tokens": null,
+        "total_llm_calls": null,
+        "total_output_tokens": null,
+        "total_tokens": null,
+        "verification_failure_rate": 0.0
+      },
+      "resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    }
+  ],
+  "deltas": [
+    {
+      "comparison_key": "no_correction",
+      "comparison_label": "No Self-Correction",
+      "full_minus_comparison_llm_calls": 1.1,
+      "full_minus_comparison_resolve_rate": 0.0,
+      "full_minus_comparison_runtime_seconds": 52.52959899000007,
+      "full_minus_comparison_tokens": 6345.3,
+      "resolve_rate_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    },
+    {
+      "comparison_key": "no_exploration",
+      "comparison_label": "No Agentic Exploration",
+      "full_minus_comparison_llm_calls": null,
+      "full_minus_comparison_resolve_rate": 0.0,
+      "full_minus_comparison_runtime_seconds": 48.835364169999686,
+      "full_minus_comparison_tokens": null,
+      "resolve_rate_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    },
+    {
+      "comparison_key": "no_agentic_test",
+      "comparison_label": "No Agentic Test",
+      "full_minus_comparison_llm_calls": null,
+      "full_minus_comparison_resolve_rate": 0.0,
+      "full_minus_comparison_runtime_seconds": 64.04177438999969,
+      "full_minus_comparison_tokens": null,
+      "resolve_rate_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "base_commit": "44a4960fd6a607e2b6d44b222962d9218ee7f6d0",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "bugfix-arithmetic"
+    },
+    {
+      "base_commit": "ae673ddd24890573d92a62573761854dfdc7f35f",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "cache-key-case"
+    },
+    {
+      "base_commit": "2f646c11b08b193160d41b6bad81e4b701bde0a6",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "edge-clamp"
+    },
+    {
+      "base_commit": "f00fcbc559e83452d7f0c6aa757d140127b848a0",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "edge-division"
+    },
+    {
+      "base_commit": "fdd208f151975e1263aefd9e3df5aac161b027db",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "feature-currency"
+    },
+    {
+      "base_commit": "70f0c4eada71ce31daff3e4214d803ea9e3f812e",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "feature-even"
+    },
+    {
+      "base_commit": "07ae15bf5eaccc2c6c5448cb456feba5e90e5137",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "format-slug"
+    },
+    {
+      "base_commit": "17a522bc4d5e1d4b71e3bd7f52772995ef50d768",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "multi-file-validation"
+    },
+    {
+      "base_commit": "fb47da1c7848ac4b5b7d1cca996c0826f9868557",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "refactor-tags"
+    },
+    {
+      "base_commit": "7ae3ded661bf2623d4365b3fe491b3a560f9c1a6",
+      "resolved": {
+        "full": false,
+        "no_agentic_test": false,
+        "no_correction": false,
+        "no_exploration": false
+      },
+      "task_id": "regression-bool"
+    }
+  ],
+  "note": "This is a small exploratory benchmark. Confidence intervals are wide and should not be interpreted as production-level statistical evidence.",
+  "regressed_after_correction": [],
+  "rescued_by_correction": [],
+  "task_ids": [
+    "bugfix-arithmetic",
+    "cache-key-case",
+    "edge-clamp",
+    "edge-division",
+    "feature-currency",
+    "feature-even",
+    "format-slug",
+    "multi-file-validation",
+    "refactor-tags",
+    "regression-bool"
+  ]
+}

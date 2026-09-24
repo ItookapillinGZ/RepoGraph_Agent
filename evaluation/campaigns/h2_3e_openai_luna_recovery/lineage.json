@@ -1,0 +1,13 @@
+{
+  "authoritative_view": "C:\\Users\\\u9ec4\u5bb6\u4e50\\Desktop\\02-code-review-agent\\evaluation\\campaigns\\h2_3d_openai_luna\\final",
+  "completed_parent_configurations_reused": [
+    "full",
+    "no_correction"
+  ],
+  "continuation_campaign": "h2_3e_openai_luna_recovery",
+  "continuation_configurations": [
+    "no_exploration",
+    "no_agentic_test"
+  ],
+  "parent_campaign": "h2_3d_openai_luna"
+}

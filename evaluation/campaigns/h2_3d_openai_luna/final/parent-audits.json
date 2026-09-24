@@ -1,0 +1,22 @@
+{
+  "full": {
+    "attempts": 17,
+    "campaign_id": "h2_3d_openai_luna",
+    "candidate_snapshots": 31,
+    "experiments": 1,
+    "issues": [],
+    "passed": true,
+    "preserved_partial_snapshots": 0,
+    "results": 17
+  },
+  "no_correction": {
+    "attempts": 17,
+    "campaign_id": "h2_3d_openai_luna",
+    "candidate_snapshots": 17,
+    "experiments": 1,
+    "issues": [],
+    "passed": true,
+    "preserved_partial_snapshots": 0,
+    "results": 17
+  }
+}

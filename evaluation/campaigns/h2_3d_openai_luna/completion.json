@@ -1,0 +1,42 @@
+{
+  "authoritative_final": false,
+  "campaign_id": "h2_3d_openai_luna",
+  "capability_failures_retried": false,
+  "configuration_task_counts": {
+    "full": 17,
+    "no_agentic_test": 0,
+    "no_correction": 17,
+    "no_exploration": 4
+  },
+  "doctor": {
+    "docker_cli_available": true,
+    "docker_daemon_available": false,
+    "swebench_installed": true
+  },
+  "live_task_runs_consumed": 39,
+  "official_docker_smoke": "blocked",
+  "prior_campaigns_preserved": true,
+  "python_regression": {
+    "failed": 0,
+    "passed": 867,
+    "skipped": 10
+  },
+  "readme_updated": false,
+  "regressions": "passed",
+  "security_scan_clean": true,
+  "static_checks": {
+    "bandit": "passed",
+    "bandit_excluded_generated_runtime": true,
+    "pip_check": "passed",
+    "ruff": "passed"
+  },
+  "status": "stopped",
+  "stop_reason": "Candidate snapshot persistence mismatch detected.",
+  "studio_regression": {
+    "build": "passed",
+    "lint": "passed",
+    "playwright_failed": 0,
+    "playwright_passed": 1,
+    "typecheck": "passed"
+  }
+}

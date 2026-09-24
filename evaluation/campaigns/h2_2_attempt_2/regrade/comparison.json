@@ -1,0 +1,364 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260904,
+  "comparison_valid": true,
+  "configs": [
+    {
+      "api_infrastructure_failures": 0,
+      "average_duration_seconds": 126.44951871000004,
+      "average_llm_calls": 9.1,
+      "final_resolve_rate": 1.0,
+      "final_resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "final_resolved": 10,
+      "first_attempt_confirmed_resolved": 8,
+      "first_attempt_observed_tasks": 8,
+      "first_attempt_resolve_rate_lower_bound": 0.8,
+      "first_attempt_resolve_rate_upper_bound": 1.0,
+      "first_attempt_unknown_tasks": 2,
+      "key": "full",
+      "label": "Full RepoGraph",
+      "median_duration_seconds": 117.60228260000031,
+      "median_llm_calls": 8.5,
+      "prediction_pass_rate": 1.0,
+      "regraded_predictions": 10,
+      "tasks": 10,
+      "telemetry_complete": true,
+      "tokens_per_task": 50060.2,
+      "unavailable_predictions": 0
+    },
+    {
+      "api_infrastructure_failures": 0,
+      "average_duration_seconds": 73.91991971999997,
+      "average_llm_calls": 8.0,
+      "final_resolve_rate": 1.0,
+      "final_resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "final_resolved": 10,
+      "first_attempt_confirmed_resolved": 10,
+      "first_attempt_observed_tasks": 10,
+      "first_attempt_resolve_rate_lower_bound": 1.0,
+      "first_attempt_resolve_rate_upper_bound": 1.0,
+      "first_attempt_unknown_tasks": 0,
+      "key": "no_correction",
+      "label": "No Self-Correction",
+      "median_duration_seconds": 71.47209154999973,
+      "median_llm_calls": 8.0,
+      "prediction_pass_rate": 1.0,
+      "regraded_predictions": 10,
+      "tasks": 10,
+      "telemetry_complete": true,
+      "tokens_per_task": 43714.9,
+      "unavailable_predictions": 0
+    },
+    {
+      "api_infrastructure_failures": 3,
+      "average_duration_seconds": 77.61415454000034,
+      "average_llm_calls": 8.571428571428571,
+      "final_resolve_rate": 0.7,
+      "final_resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.4,
+        "point_estimate": 0.7,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "final_resolved": 7,
+      "first_attempt_confirmed_resolved": 5,
+      "first_attempt_observed_tasks": 8,
+      "first_attempt_resolve_rate_lower_bound": 0.5,
+      "first_attempt_resolve_rate_upper_bound": 0.7,
+      "first_attempt_unknown_tasks": 2,
+      "key": "no_exploration",
+      "label": "No Agentic Exploration",
+      "median_duration_seconds": 66.33496835000005,
+      "median_llm_calls": 7.0,
+      "prediction_pass_rate": 1.0,
+      "regraded_predictions": 7,
+      "tasks": 10,
+      "telemetry_complete": false,
+      "tokens_per_task": null,
+      "unavailable_predictions": 3
+    },
+    {
+      "api_infrastructure_failures": 3,
+      "average_duration_seconds": 62.40774432000035,
+      "average_llm_calls": 9.714285714285714,
+      "final_resolve_rate": 0.7,
+      "final_resolve_rate_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.4,
+        "point_estimate": 0.7,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "final_resolved": 7,
+      "first_attempt_confirmed_resolved": 5,
+      "first_attempt_observed_tasks": 8,
+      "first_attempt_resolve_rate_lower_bound": 0.5,
+      "first_attempt_resolve_rate_upper_bound": 0.7,
+      "first_attempt_unknown_tasks": 2,
+      "key": "no_agentic_test",
+      "label": "No Agentic Test",
+      "median_duration_seconds": 48.51642975000141,
+      "median_llm_calls": 8.0,
+      "prediction_pass_rate": 1.0,
+      "regraded_predictions": 7,
+      "tasks": 10,
+      "telemetry_complete": false,
+      "tokens_per_task": null,
+      "unavailable_predictions": 3
+    }
+  ],
+  "correction_analysis": {
+    "attempted_tasks": 2,
+    "confirmed_rescued_tasks": [],
+    "possible_rescued_tasks": [
+      "format-slug",
+      "multi-file-validation"
+    ],
+    "rescue_rate_lower_bound": 0.0,
+    "rescue_rate_upper_bound": 1.0
+  },
+  "deltas": [
+    {
+      "comparison_key": "no_correction",
+      "comparison_label": "No Self-Correction",
+      "final_resolve_rate_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.0
+      },
+      "full_minus_comparison_final_resolve_rate": 0.0,
+      "full_minus_comparison_llm_calls": 1.1,
+      "full_minus_comparison_runtime_seconds": 52.52959899000007,
+      "full_minus_comparison_tokens": 6345.3
+    },
+    {
+      "comparison_key": "no_exploration",
+      "comparison_label": "No Agentic Exploration",
+      "final_resolve_rate_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.3,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.6
+      },
+      "full_minus_comparison_final_resolve_rate": 0.30000000000000004,
+      "full_minus_comparison_llm_calls": null,
+      "full_minus_comparison_runtime_seconds": 48.835364169999686,
+      "full_minus_comparison_tokens": null
+    },
+    {
+      "comparison_key": "no_agentic_test",
+      "comparison_label": "No Agentic Test",
+      "final_resolve_rate_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.3,
+        "resamples": 10000,
+        "sample_size": 10,
+        "seed": 20260904,
+        "upper": 0.6
+      },
+      "full_minus_comparison_final_resolve_rate": 0.30000000000000004,
+      "full_minus_comparison_llm_calls": null,
+      "full_minus_comparison_runtime_seconds": 64.04177438999969,
+      "full_minus_comparison_tokens": null
+    }
+  ],
+  "evaluator_version": "local-fixed-argv-v2",
+  "first_attempt_limitation": "The original evaluator defect affected first-attempt grading. First candidate artifacts for corrected tasks were not persisted, so exact first-attempt rates and exact correction rescue counts are unrecoverable.",
+  "grading_basis": "offline replay of immutable live-LLM prediction patches",
+  "llm_api_calls_during_regrade": 0,
+  "matrix": [
+    {
+      "base_commit": "44a4960fd6a607e2b6d44b222962d9218ee7f6d0",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": false,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "no_prediction",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "bugfix-arithmetic"
+    },
+    {
+      "base_commit": "ae673ddd24890573d92a62573761854dfdc7f35f",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": false,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "no_prediction",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "cache-key-case"
+    },
+    {
+      "base_commit": "2f646c11b08b193160d41b6bad81e4b701bde0a6",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": false,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "no_prediction",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "edge-clamp"
+    },
+    {
+      "base_commit": "f00fcbc559e83452d7f0c6aa757d140127b848a0",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "edge-division"
+    },
+    {
+      "base_commit": "fdd208f151975e1263aefd9e3df5aac161b027db",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "feature-currency"
+    },
+    {
+      "base_commit": "70f0c4eada71ce31daff3e4214d803ea9e3f812e",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": false
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "no_prediction"
+      },
+      "task_id": "feature-even"
+    },
+    {
+      "base_commit": "07ae15bf5eaccc2c6c5448cb456feba5e90e5137",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": false
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "no_prediction"
+      },
+      "task_id": "format-slug"
+    },
+    {
+      "base_commit": "17a522bc4d5e1d4b71e3bd7f52772995ef50d768",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": false
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "no_prediction"
+      },
+      "task_id": "multi-file-validation"
+    },
+    {
+      "base_commit": "fb47da1c7848ac4b5b7d1cca996c0826f9868557",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "refactor-tags"
+    },
+    {
+      "base_commit": "7ae3ded661bf2623d4365b3fe491b3a560f9c1a6",
+      "final_resolved": {
+        "full": true,
+        "no_agentic_test": true,
+        "no_correction": true,
+        "no_exploration": true
+      },
+      "regrade_status": {
+        "full": "passed",
+        "no_agentic_test": "passed",
+        "no_correction": "passed",
+        "no_exploration": "passed"
+      },
+      "task_id": "regression-bool"
+    }
+  ],
+  "original_grading_valid": false,
+  "original_history_preserved": true,
+  "regrade_reason": "Portable dataset commands beginning with 'python' resolved to a system interpreter without pytest inside the isolated worker. Pytest's import failure returned exit code 1 and was misclassified as an assertion failure.",
+  "small_sample_note": "This is a small exploratory benchmark. Confidence intervals are wide and should not be interpreted as production-level statistical evidence."
+}

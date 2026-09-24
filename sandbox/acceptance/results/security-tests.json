@@ -1,0 +1,91 @@
+{
+  "boundary": {
+    "evidence": {
+      "cpu_period": 100000,
+      "cpu_quota": 50000,
+      "docker_socket_visible": false,
+      "effective_capabilities": 0,
+      "gid": 10001,
+      "memory_max_bytes": 67108864,
+      "network_blocked": true,
+      "no_new_privileges": true,
+      "pids_max": 16,
+      "rootfs_write_blocked": true,
+      "secret_visible": false,
+      "tmp_writable": true,
+      "uid": 10001,
+      "username": "repograph",
+      "workspace_writable": true
+    },
+    "execution": {
+      "duration_seconds": 0.975785,
+      "error_kind": null,
+      "exit_code": 0,
+      "output_truncated": false,
+      "provenance": {
+        "backend": "docker",
+        "cap_drop_all": true,
+        "cpu_limit": 0.5,
+        "image": "repograph-sandbox:local",
+        "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+        "memory_limit_mb": 64,
+        "network": "none",
+        "no_new_privileges": true,
+        "pids_limit": 16,
+        "read_only_root": true,
+        "sandboxed": true,
+        "timeout_seconds": 8.0
+      },
+      "status": "passed",
+      "stderr_truncated": false,
+      "stdout_truncated": false,
+      "timed_out": false
+    },
+    "passed": true
+  },
+  "docker_argv": {
+    "passed": true,
+    "required": {
+      "--cap-drop ALL": true,
+      "--cpus 0.5": true,
+      "--memory 64m": true,
+      "--network none": true,
+      "--pids-limit 16": true,
+      "--read-only": true,
+      "--rm": true,
+      "--security-opt no-new-privileges": true,
+      "--tmpfs hardened": true,
+      "no docker socket": true,
+      "single mount": true
+    }
+  },
+  "host_filesystem": {
+    "execution": {
+      "duration_seconds": 1.277937,
+      "error_kind": null,
+      "exit_code": 0,
+      "output_truncated": false,
+      "provenance": {
+        "backend": "docker",
+        "cap_drop_all": true,
+        "cpu_limit": 0.5,
+        "image": "repograph-sandbox:local",
+        "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+        "memory_limit_mb": 64,
+        "network": "none",
+        "no_new_privileges": true,
+        "pids_limit": 16,
+        "read_only_root": true,
+        "sandboxed": true,
+        "timeout_seconds": 8.0
+      },
+      "status": "passed",
+      "stderr_truncated": false,
+      "stdout_truncated": false,
+      "timed_out": false
+    },
+    "passed": true,
+    "sentinel_unchanged": true,
+    "source_unchanged": true
+  }
+}

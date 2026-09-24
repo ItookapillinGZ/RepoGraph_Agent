@@ -1,0 +1,117 @@
+{
+  "cpu_limit": {
+    "passed": true,
+    "period": 100000,
+    "quota": 50000
+  },
+  "memory_limit": {
+    "execution": {
+      "duration_seconds": 1.297482,
+      "error_kind": null,
+      "exit_code": 137,
+      "output_truncated": false,
+      "provenance": {
+        "backend": "docker",
+        "cap_drop_all": true,
+        "cpu_limit": 0.5,
+        "image": "repograph-sandbox:local",
+        "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+        "memory_limit_mb": 64,
+        "network": "none",
+        "no_new_privileges": true,
+        "pids_limit": 16,
+        "read_only_root": true,
+        "sandboxed": true,
+        "timeout_seconds": 8.0
+      },
+      "status": "failed",
+      "stderr_truncated": false,
+      "stdout_truncated": false,
+      "timed_out": false
+    },
+    "passed": true
+  },
+  "output_bounding": {
+    "execution": {
+      "duration_seconds": 1.063968,
+      "error_kind": null,
+      "exit_code": 0,
+      "output_truncated": true,
+      "provenance": {
+        "backend": "docker",
+        "cap_drop_all": true,
+        "cpu_limit": 0.5,
+        "image": "repograph-sandbox:local",
+        "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+        "memory_limit_mb": 64,
+        "network": "none",
+        "no_new_privileges": true,
+        "pids_limit": 16,
+        "read_only_root": true,
+        "sandboxed": true,
+        "timeout_seconds": 8.0
+      },
+      "status": "passed",
+      "stderr_truncated": true,
+      "stdout_truncated": true,
+      "timed_out": false
+    },
+    "passed": true,
+    "stored_stderr_chars": 1024,
+    "stored_stdout_chars": 1024
+  },
+  "pid_limit": {
+    "execution": {
+      "duration_seconds": 1.682309,
+      "error_kind": null,
+      "exit_code": 0,
+      "output_truncated": false,
+      "provenance": {
+        "backend": "docker",
+        "cap_drop_all": true,
+        "cpu_limit": 0.5,
+        "image": "repograph-sandbox:local",
+        "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+        "memory_limit_mb": 64,
+        "network": "none",
+        "no_new_privileges": true,
+        "pids_limit": 16,
+        "read_only_root": true,
+        "sandboxed": true,
+        "timeout_seconds": 8.0
+      },
+      "status": "passed",
+      "stderr_truncated": false,
+      "stdout_truncated": false,
+      "timed_out": false
+    },
+    "passed": true
+  },
+  "timeout": {
+    "execution": {
+      "duration_seconds": 2.860188,
+      "error_kind": null,
+      "exit_code": null,
+      "output_truncated": false,
+      "provenance": {
+        "backend": "docker",
+        "cap_drop_all": true,
+        "cpu_limit": 0.5,
+        "image": "repograph-sandbox:local",
+        "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+        "memory_limit_mb": 64,
+        "network": "none",
+        "no_new_privileges": true,
+        "pids_limit": 16,
+        "read_only_root": true,
+        "sandboxed": true,
+        "timeout_seconds": 1.0
+      },
+      "status": "timeout",
+      "stderr_truncated": false,
+      "stdout_truncated": false,
+      "timed_out": true
+    },
+    "passed": true
+  }
+}

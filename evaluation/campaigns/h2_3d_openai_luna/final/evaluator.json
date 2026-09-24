@@ -1,0 +1,414 @@
+{
+  "baseline_checks": {
+    "batch-rollback-state": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "dependency-load-order": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "domain-timezone-serialization": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "email-domain-policy": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "event-retry-deduplication": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "inventory-reservation-atomicity": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "invoice-rounding-policy": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "nested-secret-redaction": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "pagination-zero-cursor": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "permission-parent-inheritance": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "record-parser-contract": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "registry-alias-collision": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "retry-idempotency-key": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "session-refresh-persistence": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "settings-source-precedence": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "specific-route-precedence": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "subscription-listener-removal": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "timeout-disabled-zero": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "unicode-cache-identity": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    },
+    "workspace-path-containment": {
+      "exit_code": 1,
+      "failure_kind": "assertion_failure",
+      "status": "failed"
+    }
+  },
+  "preflight_fingerprint": {
+    "evaluator_digest": "b8cfdd50b2b842b225743a0c8f48b836baa9351f3bd524607478c79cb93f153b",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest_version": "9.1.1",
+    "python_version": "3.13.7"
+  },
+  "preflight_succeeded": true,
+  "task_specifications": {
+    "batch-rollback-state": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\batch-rollback-state",
+        "-q"
+      ],
+      "digest": "b8cfdd50b2b842b225743a0c8f48b836baa9351f3bd524607478c79cb93f153b",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "dependency-load-order": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\dependency-load-order",
+        "-q"
+      ],
+      "digest": "6660c072a2ca7e4746aa40d3841db23defff383e7e8af4d2099c16a30e89e2a4",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "domain-timezone-serialization": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\domain-timezone-serialization",
+        "-q"
+      ],
+      "digest": "d1a5985061c95012a7983789d6f4cd6ab04752847cf1eb30ecfa84cbe6c36996",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "email-domain-policy": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\email-domain-policy",
+        "-q"
+      ],
+      "digest": "e9ec1f75095b3f89f1ebec8e9fd6f33647c7c3b0e7236d378af0e8de68e5e0b9",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "event-retry-deduplication": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\event-retry-deduplication",
+        "-q"
+      ],
+      "digest": "a0c9512ad6784639757025406dc3c9bd9c725a2bb68e4bee4dad78b8798a88db",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "inventory-reservation-atomicity": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\inventory-reservation-atomicity",
+        "-q"
+      ],
+      "digest": "4fd159ae91a31919805b3250a4a67a8c240c250fbf27aa3af895b1c361fcef08",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "invoice-rounding-policy": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\invoice-rounding-policy",
+        "-q"
+      ],
+      "digest": "ece54df5e0c23c3fc2f5123d4b1d93f154f1c51a6cf13f642313122d79d12548",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "nested-secret-redaction": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\nested-secret-redaction",
+        "-q"
+      ],
+      "digest": "035985ea511bbdd0dfdbea7eb6741d8fe1d9d30b097f483f3dc22d168722cd07",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "pagination-zero-cursor": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\pagination-zero-cursor",
+        "-q"
+      ],
+      "digest": "df0d1a0d1a94013f9353d39929ed2f7af02e2586466bddbbe2176be6aa7658b4",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "permission-parent-inheritance": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\permission-parent-inheritance",
+        "-q"
+      ],
+      "digest": "8f04123b3db0e446cb365b395edc54157c5d16493958f44def13ead458e33cf4",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "record-parser-contract": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\record-parser-contract",
+        "-q"
+      ],
+      "digest": "9d57d7808a3ce82543adce695747b4397c329a56dcd7bbaeaf443734336932c3",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "registry-alias-collision": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\registry-alias-collision",
+        "-q"
+      ],
+      "digest": "948f56f7d428c5279ab60965cd638e1b93a389fba866437b0f1b162774bb2bc7",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "retry-idempotency-key": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\retry-idempotency-key",
+        "-q"
+      ],
+      "digest": "d69b6c7434d78572a806966bd9515d918f7e96feac75328f0a3c5ede230f6266",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "session-refresh-persistence": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\session-refresh-persistence",
+        "-q"
+      ],
+      "digest": "272d502a17a7e54ecb5bb6abc2eca4a11839dd2c7680813a91da1bd776fa4134",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "settings-source-precedence": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\settings-source-precedence",
+        "-q"
+      ],
+      "digest": "257fcecacc68ac51258062643c6d8688f0afd8bd54b8a18f2545881420c1e990",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "specific-route-precedence": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\specific-route-precedence",
+        "-q"
+      ],
+      "digest": "3d7d7e6d9113880584f415906a0b857002feadaf60f4d3137ccba754398c548f",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "subscription-listener-removal": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\subscription-listener-removal",
+        "-q"
+      ],
+      "digest": "ada4d409a86d855be3de202ca66991e2a845d803d96a097283b753f5f697dd21",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "timeout-disabled-zero": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\timeout-disabled-zero",
+        "-q"
+      ],
+      "digest": "1d149c1d1ffc2bfa2f50a72bf702ea8a17277eda4b3f34c64e8def025a9d2ab2",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "unicode-cache-identity": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\unicode-cache-identity",
+        "-q"
+      ],
+      "digest": "9223b6b3ecbc61f1531876076e0c0f0258c35ef00ab73e1d07d80bb599f19f69",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    },
+    "workspace-path-containment": {
+      "command": [
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\evaluator-only\\hidden-tests\\workspace-path-containment",
+        "-q"
+      ],
+      "digest": "c11824fbf678cce6f0e8c90b296c1daa07f3aacd186df4d3d1f07b9bb1f38e8d",
+      "kind": "local",
+      "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+      "timeout_seconds": 300.0,
+      "version": "local-fixed-argv-v3"
+    }
+  },
+  "version": "local-fixed-argv-v3"
+}

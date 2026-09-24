@@ -1,0 +1,46 @@
+{
+  "full": {
+    "api_infrastructure_failure": 0,
+    "candidate_generation_failure": 0,
+    "correction_failure": 1,
+    "evaluation_infrastructure_failure": 0,
+    "planning_failure": 0,
+    "review_failure": 0,
+    "timeout": 0,
+    "valid_prediction_unresolved": 0,
+    "verification_failure": 0
+  },
+  "no_agentic_test": {
+    "api_infrastructure_failure": 0,
+    "candidate_generation_failure": 0,
+    "correction_failure": 0,
+    "evaluation_infrastructure_failure": 0,
+    "planning_failure": 0,
+    "review_failure": 0,
+    "timeout": 0,
+    "valid_prediction_unresolved": 0,
+    "verification_failure": 0
+  },
+  "no_correction": {
+    "api_infrastructure_failure": 1,
+    "candidate_generation_failure": 0,
+    "correction_failure": 0,
+    "evaluation_infrastructure_failure": 0,
+    "planning_failure": 0,
+    "review_failure": 0,
+    "timeout": 0,
+    "valid_prediction_unresolved": 1,
+    "verification_failure": 0
+  },
+  "no_exploration": {
+    "api_infrastructure_failure": 3,
+    "candidate_generation_failure": 0,
+    "correction_failure": 0,
+    "evaluation_infrastructure_failure": 0,
+    "planning_failure": 0,
+    "review_failure": 0,
+    "timeout": 0,
+    "valid_prediction_unresolved": 0,
+    "verification_failure": 0
+  }
+}

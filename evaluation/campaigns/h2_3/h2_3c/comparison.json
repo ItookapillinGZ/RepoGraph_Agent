@@ -1,0 +1,1050 @@
+{
+  "analysis_seed": 20260904,
+  "authoritative_final": false,
+  "bootstrap_resamples": 10000,
+  "configs": {
+    "full": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 16,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 1.0,
+      "exact_final_resolved": 16,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 16,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 1.0,
+      "exact_first_attempt_resolved": 16,
+      "exact_regraded_predictions": 16,
+      "metrics": {
+        "assigned_tasks": 17,
+        "average_changed_files": 1.8235294117647058,
+        "average_correction_rounds": 0.29411764705882354,
+        "average_cost": null,
+        "average_duration_seconds": 288.88960401176456,
+        "average_input_tokens": null,
+        "average_llm_calls": 11.941176470588236,
+        "average_output_tokens": null,
+        "average_test_calls": 2.5294117647058822,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": null,
+        "candidate_failure_rate": 0.058823529411764705,
+        "capability_resolve_rate": 1.0,
+        "completed_with_prediction": 16,
+        "correction_attempted_tasks": 4,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": 0.0,
+        "correction_rescue_rate": 0.0,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": 0.0,
+        "end_to_end_resolve_rate": 0.9411764705882353,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 17
+        },
+        "failure_breakdown": {
+          "correction_failure": 1
+        },
+        "final_resolve_rate": 0.9411764705882353,
+        "final_resolved": 16,
+        "first_attempt_resolve_rate": 0.9411764705882353,
+        "first_attempt_resolved": 16,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.0,
+        "infrastructure_failures": 0,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 191.74404650001088,
+        "median_llm_calls": 10.0,
+        "median_total_tokens": null,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 17,
+        "resolve_rate": 0.9411764705882353,
+        "review_failure_rate": 0.17647058823529413,
+        "tasks_entering_correction": 4,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 0,
+        "tasks_resolved": 16,
+        "tasks_total": 17,
+        "tasks_using_correction": 4,
+        "telemetry_incomplete_tasks": 3,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": null,
+        "total_input_tokens": null,
+        "total_llm_calls": 203,
+        "total_output_tokens": null,
+        "total_tokens": null,
+        "verification_failure_rate": 0.058823529411764705
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [],
+      "tasks_entering_correction": 4,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 0
+    },
+    "no_agentic_test": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": null,
+        "point_estimate": null,
+        "resamples": 10000,
+        "sample_size": 0,
+        "seed": 20260904,
+        "upper": null
+      },
+      "exact_final_resolve_rate": null,
+      "exact_final_resolved": 0,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": null,
+        "point_estimate": null,
+        "resamples": 10000,
+        "sample_size": 0,
+        "seed": 20260904,
+        "upper": null
+      },
+      "exact_first_attempt_resolve_rate": null,
+      "exact_first_attempt_resolved": 0,
+      "exact_regraded_predictions": 0,
+      "metrics": {
+        "assigned_tasks": 0,
+        "average_changed_files": 0.0,
+        "average_correction_rounds": 0.0,
+        "average_cost": null,
+        "average_duration_seconds": 0.0,
+        "average_input_tokens": null,
+        "average_llm_calls": null,
+        "average_output_tokens": null,
+        "average_test_calls": null,
+        "average_tool_calls": null,
+        "average_total_tokens": null,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 0.0,
+        "completed_with_prediction": 0,
+        "correction_attempted_tasks": 0,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": null,
+        "correction_rescue_rate": null,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": null,
+        "end_to_end_resolve_rate": 0.0,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {},
+        "failure_breakdown": {},
+        "final_resolve_rate": 0.0,
+        "final_resolved": 0,
+        "first_attempt_resolve_rate": 0.0,
+        "first_attempt_resolved": 0,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.0,
+        "infrastructure_failures": 0,
+        "median_changed_files": 0.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 0.0,
+        "median_llm_calls": null,
+        "median_total_tokens": null,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 0,
+        "resolve_rate": 0.0,
+        "review_failure_rate": 0.0,
+        "tasks_entering_correction": 0,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 0,
+        "tasks_resolved": 0,
+        "tasks_total": 0,
+        "tasks_using_correction": 0,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": null,
+        "total_input_tokens": null,
+        "total_llm_calls": null,
+        "total_output_tokens": null,
+        "total_tokens": null,
+        "verification_failure_rate": 0.0
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [],
+      "tasks_entering_correction": 0,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 0
+    },
+    "no_correction": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8125,
+        "point_estimate": 0.9375,
+        "resamples": 10000,
+        "sample_size": 16,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 0.9375,
+      "exact_final_resolved": 15,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8125,
+        "point_estimate": 0.9375,
+        "resamples": 10000,
+        "sample_size": 16,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 0.9375,
+      "exact_first_attempt_resolved": 15,
+      "exact_regraded_predictions": 16,
+      "metrics": {
+        "assigned_tasks": 17,
+        "average_changed_files": 1.8823529411764706,
+        "average_correction_rounds": 0.0,
+        "average_cost": null,
+        "average_duration_seconds": 260.6210788411794,
+        "average_input_tokens": null,
+        "average_llm_calls": 9.875,
+        "average_output_tokens": null,
+        "average_test_calls": 2.0,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": null,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 0.9375,
+        "completed_with_prediction": 16,
+        "correction_attempted_tasks": 0,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": null,
+        "correction_rescue_rate": null,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": 0.0,
+        "end_to_end_resolve_rate": 0.8823529411764706,
+        "evaluation_failure_rate": 0.058823529411764705,
+        "evaluator_breakdown": {
+          "local": 17
+        },
+        "failure_breakdown": {
+          "api_infrastructure_failure": 1,
+          "valid_prediction_unresolved": 1
+        },
+        "final_resolve_rate": 0.8823529411764706,
+        "final_resolved": 15,
+        "first_attempt_resolve_rate": 0.8823529411764706,
+        "first_attempt_resolved": 15,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.058823529411764705,
+        "infrastructure_failures": 1,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 285.30745700001717,
+        "median_llm_calls": 10.0,
+        "median_total_tokens": null,
+        "planning_failure_rate": 0.058823529411764705,
+        "process_isolated_tasks": 17,
+        "resolve_rate": 0.8823529411764706,
+        "review_failure_rate": 0.5294117647058824,
+        "tasks_entering_correction": 0,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 0,
+        "tasks_resolved": 15,
+        "tasks_total": 17,
+        "tasks_using_correction": 0,
+        "telemetry_incomplete_tasks": 7,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": null,
+        "total_input_tokens": null,
+        "total_llm_calls": null,
+        "total_output_tokens": null,
+        "total_tokens": null,
+        "verification_failure_rate": 0.058823529411764705
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [],
+      "tasks_entering_correction": 0,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 0
+    },
+    "no_exploration": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 7,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 1.0,
+      "exact_final_resolved": 7,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 7,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 1.0,
+      "exact_first_attempt_resolved": 7,
+      "exact_regraded_predictions": 7,
+      "metrics": {
+        "assigned_tasks": 10,
+        "average_changed_files": 1.3,
+        "average_correction_rounds": 0.7,
+        "average_cost": null,
+        "average_duration_seconds": 242.38148399000056,
+        "average_input_tokens": null,
+        "average_llm_calls": 10.714285714285714,
+        "average_output_tokens": null,
+        "average_test_calls": 3.142857142857143,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": null,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 1.0,
+        "completed_with_prediction": 7,
+        "correction_attempted_tasks": 4,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": 0.0,
+        "correction_rescue_rate": 0.0,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": 0.0,
+        "end_to_end_resolve_rate": 0.7,
+        "evaluation_failure_rate": 0.3,
+        "evaluator_breakdown": {
+          "local": 10
+        },
+        "failure_breakdown": {
+          "api_infrastructure_failure": 3
+        },
+        "final_resolve_rate": 0.7,
+        "final_resolved": 7,
+        "first_attempt_resolve_rate": 0.7,
+        "first_attempt_resolved": 7,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.3,
+        "infrastructure_failures": 3,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 206.16232534998562,
+        "median_llm_calls": 11.0,
+        "median_total_tokens": null,
+        "planning_failure_rate": 0.3,
+        "process_isolated_tasks": 10,
+        "resolve_rate": 0.7,
+        "review_failure_rate": 0.5,
+        "tasks_entering_correction": 4,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 0,
+        "tasks_resolved": 7,
+        "tasks_total": 10,
+        "tasks_using_correction": 4,
+        "telemetry_incomplete_tasks": 2,
+        "tokens_per_resolved_task": null,
+        "tokens_per_task": null,
+        "total_input_tokens": null,
+        "total_llm_calls": null,
+        "total_output_tokens": null,
+        "total_tokens": null,
+        "verification_failure_rate": 0.0
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [],
+      "tasks_entering_correction": 4,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 0
+    }
+  },
+  "full_correction_matrix": [
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "batch-rollback-state",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "dependency-load-order",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "domain-timezone-serialization",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "email-domain-policy",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "event-retry-deduplication",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "inventory-reservation-atomicity",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "invoice-rounding-policy",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "pagination-zero-cursor",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "permission-parent-inheritance",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "record-parser-contract",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "registry-alias-collision",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "retry-idempotency-key",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "session-refresh-persistence",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "settings-source-precedence",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "specific-route-precedence",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "subscription-listener-removal",
+      "unchanged_failure": false
+    }
+  ],
+  "paired": {
+    "no_agentic_test": {
+      "assigned_pairs": 0,
+      "capability_delta": null,
+      "capability_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": null,
+        "point_estimate": null,
+        "resamples": 10000,
+        "sample_size": 0,
+        "seed": 20260904,
+        "upper": null
+      },
+      "comparable_pairs": 0,
+      "end_to_end_delta": 0.0,
+      "not_comparable_pairs": 0,
+      "task_matrix": []
+    },
+    "no_correction": {
+      "assigned_pairs": 17,
+      "capability_delta": 0.06666666666666667,
+      "capability_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.06666666666666667,
+        "resamples": 10000,
+        "sample_size": 15,
+        "seed": 20260904,
+        "upper": 0.2
+      },
+      "comparable_pairs": 15,
+      "end_to_end_delta": 0.058823529411764705,
+      "not_comparable_pairs": 2,
+      "task_matrix": [
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "batch-rollback-state"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "dependency-load-order"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 1,
+          "comparable": true,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 1,
+          "reason": null,
+          "task_id": "domain-timezone-serialization"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "email-domain-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "event-retry-deduplication"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": null,
+          "comparable": false,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": false,
+          "end_to_end_delta": 1,
+          "reason": "not comparable: missing valid prediction from comparison",
+          "task_id": "inventory-reservation-atomicity"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "invoice-rounding-policy"
+        },
+        {
+          "baseline_resolved": false,
+          "baseline_valid_prediction": false,
+          "capability_delta": null,
+          "comparable": false,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": -1,
+          "reason": "not comparable: missing valid prediction from baseline",
+          "task_id": "nested-secret-redaction"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "pagination-zero-cursor"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "permission-parent-inheritance"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "record-parser-contract"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "registry-alias-collision"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "retry-idempotency-key"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "session-refresh-persistence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "settings-source-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "specific-route-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "subscription-listener-removal"
+        }
+      ]
+    },
+    "no_exploration": {
+      "assigned_pairs": 10,
+      "capability_delta": 0.0,
+      "capability_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.0,
+        "resamples": 10000,
+        "sample_size": 7,
+        "seed": 20260904,
+        "upper": 0.0
+      },
+      "comparable_pairs": 7,
+      "end_to_end_delta": 0.2,
+      "not_comparable_pairs": 3,
+      "task_matrix": [
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "batch-rollback-state"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "dependency-load-order"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "domain-timezone-serialization"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "email-domain-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "event-retry-deduplication"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "inventory-reservation-atomicity"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "invoice-rounding-policy"
+        },
+        {
+          "baseline_resolved": false,
+          "baseline_valid_prediction": false,
+          "capability_delta": null,
+          "comparable": false,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": false,
+          "end_to_end_delta": 0,
+          "reason": "not comparable: missing valid prediction from baseline and comparison",
+          "task_id": "nested-secret-redaction"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": null,
+          "comparable": false,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": false,
+          "end_to_end_delta": 1,
+          "reason": "not comparable: missing valid prediction from comparison",
+          "task_id": "pagination-zero-cursor"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": null,
+          "comparable": false,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": false,
+          "end_to_end_delta": 1,
+          "reason": "not comparable: missing valid prediction from comparison",
+          "task_id": "permission-parent-inheritance"
+        }
+      ]
+    }
+  },
+  "paired_counts": {
+    "no_agentic_test": {
+      "ablation_wins": 0,
+      "comparable_pairs": 0,
+      "excluded_infra_pairs": 0,
+      "excluded_non_candidate_pairs": 17,
+      "full_wins": 0,
+      "ties_resolved": 0,
+      "ties_unresolved": 0
+    },
+    "no_correction": {
+      "ablation_wins": 0,
+      "comparable_pairs": 15,
+      "excluded_infra_pairs": 1,
+      "excluded_non_candidate_pairs": 1,
+      "full_wins": 1,
+      "ties_resolved": 14,
+      "ties_unresolved": 0
+    },
+    "no_exploration": {
+      "ablation_wins": 0,
+      "comparable_pairs": 7,
+      "excluded_infra_pairs": 3,
+      "excluded_non_candidate_pairs": 7,
+      "full_wins": 0,
+      "ties_resolved": 7,
+      "ties_unresolved": 0
+    }
+  },
+  "paired_matrix": [
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "batch-rollback-state"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "dependency-load-order"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "U",
+      "no_exploration": "R",
+      "task_id": "domain-timezone-serialization"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "email-domain-policy"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "event-retry-deduplication"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "I",
+      "no_exploration": "R",
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "invoice-rounding-policy"
+    },
+    {
+      "full": "N",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "I",
+      "task_id": "nested-secret-redaction"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "I",
+      "task_id": "pagination-zero-cursor"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "I",
+      "task_id": "permission-parent-inheritance"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "record-parser-contract"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "registry-alias-collision"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "retry-idempotency-key"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "session-refresh-persistence"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "settings-source-precedence"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "specific-route-precedence"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "N",
+      "no_correction": "R",
+      "no_exploration": "N",
+      "task_id": "subscription-listener-removal"
+    }
+  ],
+  "small_n_statement": "Exploratory controlled benchmark; incomplete configurations and infrastructure failures preclude a final paired conclusion.",
+  "status": "stopped",
+  "stop_reason": "no_exploration stopped after three consecutive final infrastructure failures.",
+  "unavailable_regrades": [
+    {
+      "config": "full",
+      "reason": "no candidate snapshots",
+      "task_id": "nested-secret-redaction"
+    },
+    {
+      "config": "no_correction",
+      "reason": "no candidate snapshots",
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "config": "no_exploration",
+      "reason": "no candidate snapshots",
+      "task_id": "nested-secret-redaction"
+    },
+    {
+      "config": "no_exploration",
+      "reason": "no candidate snapshots",
+      "task_id": "pagination-zero-cursor"
+    },
+    {
+      "config": "no_exploration",
+      "reason": "no candidate snapshots",
+      "task_id": "permission-parent-inheritance"
+    }
+  ]
+}

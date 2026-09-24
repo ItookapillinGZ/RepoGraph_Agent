@@ -1,0 +1,23 @@
+{
+  "actual_model_verified": true,
+  "all_four_configs_have_17_tasks": true,
+  "analysis_seed": 20260904,
+  "bootstrap_resamples": 10000,
+  "campaign_id": "h2_3e_openai_luna_recovery",
+  "candidate_snapshot_protocol": true,
+  "capability_failures_retried": false,
+  "configured_model": "gpt-5.6-luna",
+  "direct_openai_routing_verified": true,
+  "doctor": "swebench_installed=yes; docker_cli=yes; docker_daemon=no",
+  "estimated_cost_usd": null,
+  "exact_candidate_regrade_complete": true,
+  "live_task_runs_consumed": 31,
+  "official_docker_smoke": "BLOCKED",
+  "paired_matrix_complete": true,
+  "prior_campaigns_preserved": true,
+  "regressions": "879 passed; 10 skipped; Ruff, Bandit, Studio lint/typecheck/build/E2E passed",
+  "resolved_models": [
+    "gpt-5.6-luna"
+  ],
+  "status": "complete"
+}

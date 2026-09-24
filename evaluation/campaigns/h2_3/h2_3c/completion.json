@@ -1,0 +1,23 @@
+{
+  "authoritative_final": false,
+  "capability_failures_retried": false,
+  "configuration_task_counts": {
+    "full": 17,
+    "no_agentic_test": 0,
+    "no_correction": 17,
+    "no_exploration": 10
+  },
+  "doctor": {
+    "docker_cli_available": true,
+    "docker_daemon_available": false,
+    "swebench_installed": true
+  },
+  "full_was_not_rerun": true,
+  "h2_3c_live_task_runs_consumed": 29,
+  "no_agentic_test_executed": false,
+  "official_docker_smoke": "blocked",
+  "parent_history_preserved": true,
+  "provider_infrastructure_stop": true,
+  "status": "stopped",
+  "stop_reason": "no_exploration stopped after three consecutive final infrastructure failures."
+}

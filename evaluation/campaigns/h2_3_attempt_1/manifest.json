@@ -1,0 +1,292 @@
+{
+  "api_base_url": "https://api.relayapi.ai/v1",
+  "configs": [
+    "full",
+    "no_correction",
+    "no_exploration",
+    "no_agentic_test"
+  ],
+  "configured_model": "gpt-5.6-sol",
+  "configured_provider": "openai_compatible",
+  "created_at": "2026-09-08T10:51:37.889063+00:00",
+  "dataset": "local:C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\h2-3-local-v1.jsonl",
+  "evaluator_timeout_seconds": 300.0,
+  "evaluator_version": "local-fixed-argv-v3",
+  "experiment_ids": {
+    "full": "h2-3-full-4b5d32e73ef8",
+    "no_agentic_test": "h2-3-no-agentic-test-bff58c0a1ea7",
+    "no_correction": "h2-3-no-correction-d5f1b22e315f",
+    "no_exploration": "h2-3-no-exploration-c51d0b9db2d6",
+    "smoke": "h2-3-smoke-14521481bed7"
+  },
+  "formal_task_ids": [
+    "batch-rollback-state",
+    "dependency-load-order",
+    "domain-timezone-serialization",
+    "email-domain-policy",
+    "event-retry-deduplication",
+    "inventory-reservation-atomicity",
+    "invoice-rounding-policy",
+    "nested-secret-redaction",
+    "pagination-zero-cursor",
+    "permission-parent-inheritance",
+    "record-parser-contract",
+    "registry-alias-collision",
+    "retry-idempotency-key",
+    "session-refresh-persistence",
+    "settings-source-precedence",
+    "specific-route-precedence",
+    "subscription-listener-removal"
+  ],
+  "id": "h2-3-local-8b2c6a2730fb",
+  "live_task_runs_consumed_after": 2,
+  "live_task_runs_consumed_before": 0,
+  "max_completion_tokens": 8192,
+  "max_infrastructure_retries": 1,
+  "maximum_live_task_runs": 80,
+  "model_seed": null,
+  "model_temperature": 0.0,
+  "planned_base_task_runs": 70,
+  "provider_seed_controlled": false,
+  "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+  "reasoning_effort": "none",
+  "repograph_commit": null,
+  "resolved_models": [
+    "gpt-5.6-sol"
+  ],
+  "retry_reserve": 10,
+  "smoke_task_ids": [
+    "timeout-disabled-zero",
+    "unicode-cache-identity"
+  ],
+  "source_tree_digest_after": "c2af21356cda54f44df4c4d38e166e20a755478f7d24ca6e82642b9180154986",
+  "source_tree_digest_before": "c2af21356cda54f44df4c4d38e166e20a755478f7d24ca6e82642b9180154986",
+  "stage": "H2.3",
+  "status": "stopped",
+  "stop_reason": "H2.3 smoke did not validate exact candidate grading for timeout-disabled-zero.",
+  "task_timeout_seconds": 900.0,
+  "tasks": [
+    {
+      "base_commit": "473aea255382187f95c337f531d1f55ce086c223",
+      "difficulty": [
+        "multi-file",
+        "stateful",
+        "transactional"
+      ],
+      "evaluator_digest": "b8cfdd50b2b842b225743a0c8f48b836baa9351f3bd524607478c79cb93f153b",
+      "issue_sha256": "9c5ec2c9c37e50bde6ab973606be7a1c78e7f43c013c37dcd4d0dd5a2d90da8e",
+      "repo_id": "batch-rollback-state",
+      "repository_file_count": 6,
+      "task_id": "batch-rollback-state"
+    },
+    {
+      "base_commit": "0378e26c36219031cc8cb20d1358e7675b818bc5",
+      "difficulty": [
+        "multi-file",
+        "exploration-heavy",
+        "graph"
+      ],
+      "evaluator_digest": "6660c072a2ca7e4746aa40d3841db23defff383e7e8af4d2099c16a30e89e2a4",
+      "issue_sha256": "913411df356d826d06c4b829a8c1c129807592658bf7be75c1708809dc6f1405",
+      "repo_id": "dependency-load-order",
+      "repository_file_count": 6,
+      "task_id": "dependency-load-order"
+    },
+    {
+      "base_commit": "f00cb3c67821eba0af471c71b12d866aaa6fcf9e",
+      "difficulty": [
+        "multi-file",
+        "configuration",
+        "edge-case"
+      ],
+      "evaluator_digest": "d1a5985061c95012a7983789d6f4cd6ab04752847cf1eb30ecfa84cbe6c36996",
+      "issue_sha256": "e5f1f36cd7b08aa2b6d17ed566ddc46f1cebc55d6f3e4c52131c137333f400ac",
+      "repo_id": "domain-timezone-serialization",
+      "repository_file_count": 6,
+      "task_id": "domain-timezone-serialization"
+    },
+    {
+      "base_commit": "b7d62954a21835f9a641dd375653814a5345dec3",
+      "difficulty": [
+        "multi-file",
+        "security",
+        "edge-case"
+      ],
+      "evaluator_digest": "e9ec1f75095b3f89f1ebec8e9fd6f33647c7c3b0e7236d378af0e8de68e5e0b9",
+      "issue_sha256": "38fb4fea567c4994ea9a23f3e22afadc8ceedd8a46aa1eadb3bf76fe23ca1974",
+      "repo_id": "email-domain-policy",
+      "repository_file_count": 6,
+      "task_id": "email-domain-policy"
+    },
+    {
+      "base_commit": "33648acbf41b128a21963f5a72ce205275f08127",
+      "difficulty": [
+        "multi-file",
+        "stateful",
+        "failure-recovery"
+      ],
+      "evaluator_digest": "a0c9512ad6784639757025406dc3c9bd9c725a2bb68e4bee4dad78b8798a88db",
+      "issue_sha256": "e36054055d1af9c898578ac0bff19ea41c4c5a261c214d412e696a7d57745f3f",
+      "repo_id": "event-retry-deduplication",
+      "repository_file_count": 6,
+      "task_id": "event-retry-deduplication"
+    },
+    {
+      "base_commit": "65d0c05fa29779ad9708ef9519cf0e81b7a9ce95",
+      "difficulty": [
+        "multi-file",
+        "stateful",
+        "transactional"
+      ],
+      "evaluator_digest": "4fd159ae91a31919805b3250a4a67a8c240c250fbf27aa3af895b1c361fcef08",
+      "issue_sha256": "9c581d0327569b77dd421f93285a94be009a65b45a0dba873b9c6f388a9f3ffb",
+      "repo_id": "inventory-reservation-atomicity",
+      "repository_file_count": 6,
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "base_commit": "bde01ac2e8f3dda72d686bc14f21b264f03516ae",
+      "difficulty": [
+        "multi-file",
+        "configuration",
+        "edge-case"
+      ],
+      "evaluator_digest": "ece54df5e0c23c3fc2f5123d4b1d93f154f1c51a6cf13f642313122d79d12548",
+      "issue_sha256": "3a2f9ea2ccbbcbeda66cb6c2d8f64eb21a728c56c2a8340341d4424407dbd398",
+      "repo_id": "invoice-rounding-policy",
+      "repository_file_count": 7,
+      "task_id": "invoice-rounding-policy"
+    },
+    {
+      "base_commit": "a326580660212165960dd2d53806938a3aed8a8b",
+      "difficulty": [
+        "multi-file",
+        "security",
+        "recursive"
+      ],
+      "evaluator_digest": "035985ea511bbdd0dfdbea7eb6741d8fe1d9d30b097f483f3dc22d168722cd07",
+      "issue_sha256": "2e42e44b3c18aac0251a80ff91b9489bd12bc4d76ffd1fa1128ca104c2ec4670",
+      "repo_id": "nested-secret-redaction",
+      "repository_file_count": 6,
+      "task_id": "nested-secret-redaction"
+    },
+    {
+      "base_commit": "da9eab95a834f6b197998b2dae4c89fb0eae9c0c",
+      "difficulty": [
+        "multi-file",
+        "edge-case",
+        "stateful"
+      ],
+      "evaluator_digest": "df0d1a0d1a94013f9353d39929ed2f7af02e2586466bddbbe2176be6aa7658b4",
+      "issue_sha256": "b081a1256b40675da27ee51360b7f960c01ee14d9b4f06374c433e04ec0e0118",
+      "repo_id": "pagination-zero-cursor",
+      "repository_file_count": 6,
+      "task_id": "pagination-zero-cursor"
+    },
+    {
+      "base_commit": "db06f61a12e678d8f4fee34f4ec945551b2cc446",
+      "difficulty": [
+        "multi-file",
+        "non-local",
+        "stateful"
+      ],
+      "evaluator_digest": "8f04123b3db0e446cb365b395edc54157c5d16493958f44def13ead458e33cf4",
+      "issue_sha256": "d4c65cbec84cc8be308494756a3e14493401565e1e5d93ccaa86e8acb8e63248",
+      "repo_id": "permission-parent-inheritance",
+      "repository_file_count": 6,
+      "task_id": "permission-parent-inheritance"
+    },
+    {
+      "base_commit": "37f680d77dedaaa5d8f7d3baed7097e3bfc54055",
+      "difficulty": [
+        "multi-file",
+        "refactor",
+        "api-consistency"
+      ],
+      "evaluator_digest": "9d57d7808a3ce82543adce695747b4397c329a56dcd7bbaeaf443734336932c3",
+      "issue_sha256": "2df96602e1cff6280a735f8245bef6caf428e4ecba1e7187f6c4ced756a0fb6f",
+      "repo_id": "record-parser-contract",
+      "repository_file_count": 7,
+      "task_id": "record-parser-contract"
+    },
+    {
+      "base_commit": "1c480fa2c6ecb636bcb065f9626afdbd06c22382",
+      "difficulty": [
+        "multi-file",
+        "edge-case",
+        "stateful"
+      ],
+      "evaluator_digest": "948f56f7d428c5279ab60965cd638e1b93a389fba866437b0f1b162774bb2bc7",
+      "issue_sha256": "c4c5a34a1e91eae75ea64263403c49cfe843d753f3d86f992061378f16b42443",
+      "repo_id": "registry-alias-collision",
+      "repository_file_count": 6,
+      "task_id": "registry-alias-collision"
+    },
+    {
+      "base_commit": "cf2bb682f3bc09c1727d33f7c37c4d34850e7064",
+      "difficulty": [
+        "multi-file",
+        "stateful",
+        "non-local"
+      ],
+      "evaluator_digest": "d69b6c7434d78572a806966bd9515d918f7e96feac75328f0a3c5ede230f6266",
+      "issue_sha256": "b56449da7c06af6070a6e55183edd63eead4b4cad8986e2323f8532fed3972ac",
+      "repo_id": "retry-idempotency-key",
+      "repository_file_count": 6,
+      "task_id": "retry-idempotency-key"
+    },
+    {
+      "base_commit": "7dc776ad190644793933caa5d31b012ddb712a25",
+      "difficulty": [
+        "multi-file",
+        "stateful",
+        "non-local"
+      ],
+      "evaluator_digest": "272d502a17a7e54ecb5bb6abc2eca4a11839dd2c7680813a91da1bd776fa4134",
+      "issue_sha256": "4d9e863b5ed2d9f86dad5125aa1769b1006dc3216797bc09217efb72d526d516",
+      "repo_id": "session-refresh-persistence",
+      "repository_file_count": 6,
+      "task_id": "session-refresh-persistence"
+    },
+    {
+      "base_commit": "9d179fb6354cf17b683c73bf6d9d7449ef177cdf",
+      "difficulty": [
+        "multi-file",
+        "configuration",
+        "non-local"
+      ],
+      "evaluator_digest": "257fcecacc68ac51258062643c6d8688f0afd8bd54b8a18f2545881420c1e990",
+      "issue_sha256": "9e9cd7bbe0be63e47588acd5367989f43a3f5f6e150f84987003317f334c6d2d",
+      "repo_id": "settings-source-precedence",
+      "repository_file_count": 6,
+      "task_id": "settings-source-precedence"
+    },
+    {
+      "base_commit": "a046c89d9d6edc2bd464e2312f37a4eeecfbc963",
+      "difficulty": [
+        "multi-file",
+        "configuration",
+        "exploration-heavy"
+      ],
+      "evaluator_digest": "3d7d7e6d9113880584f415906a0b857002feadaf60f4d3137ccba754398c548f",
+      "issue_sha256": "e5c47bd90e098c4fe856dcafa1242f4e5ead697e64f31cebff44075a0949ffbf",
+      "repo_id": "specific-route-precedence",
+      "repository_file_count": 6,
+      "task_id": "specific-route-precedence"
+    },
+    {
+      "base_commit": "0ce435fad1b7f6ad18ea944e91535718062207c3",
+      "difficulty": [
+        "multi-file",
+        "stateful",
+        "edge-case"
+      ],
+      "evaluator_digest": "ada4d409a86d855be3de202ca66991e2a845d803d96a097283b753f5f697dd21",
+      "issue_sha256": "21e46c476d7222eea76ef3e06e140a89ab5355c2fd1bfde2e081f3019b64fb8c",
+      "repo_id": "subscription-listener-removal",
+      "repository_file_count": 6,
+      "task_id": "subscription-listener-removal"
+    }
+  ],
+  "workers": 1
+}

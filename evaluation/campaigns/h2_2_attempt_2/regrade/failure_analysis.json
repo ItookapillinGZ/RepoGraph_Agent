@@ -1,0 +1,6 @@
+{
+  "failures": [],
+  "grading_basis": "offline replay of immutable live-LLM prediction patches",
+  "original_full_false_failures": 10,
+  "regraded_full_failures": 0
+}

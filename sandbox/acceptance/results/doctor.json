@@ -1,0 +1,7 @@
+{
+  "docker_cli_available": true,
+  "docker_daemon_available": true,
+  "sandbox_image_available": true,
+  "sandbox_image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+  "sandbox_smoke_available": true
+}

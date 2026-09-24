@@ -1,0 +1,79 @@
+{
+  "acceptance_timestamp": "2026-09-15T07:21:54.483240+00:00",
+  "configured_image": "repograph-sandbox:local",
+  "docker_version": {
+    "Client": {
+      "ApiVersion": "1.54",
+      "Arch": "amd64",
+      "BuildTime": "Wed May  6 17:10:36 2026",
+      "Context": "desktop-linux",
+      "DefaultAPIVersion": "1.54",
+      "GitCommit": "055a478",
+      "GoVersion": "go1.26.2",
+      "Os": "windows",
+      "Version": "29.4.3"
+    },
+    "Server": {
+      "ApiVersion": "1.54",
+      "Arch": "amd64",
+      "BuildTime": "2026-05-06T17:07:37.000000000+00:00",
+      "Components": [
+        {
+          "Details": {
+            "ApiVersion": "1.54",
+            "Arch": "amd64",
+            "BuildTime": "Wed May  6 17:07:37 2026",
+            "Experimental": "false",
+            "GitCommit": "56be731",
+            "GoVersion": "go1.26.2",
+            "KernelVersion": "6.6.114.1-microsoft-standard-WSL2",
+            "MinAPIVersion": "1.40",
+            "Module": "github.com/moby/moby/v2",
+            "ModuleVersion": "v2.0.0+unknown",
+            "Os": "linux"
+          },
+          "Name": "Engine",
+          "Version": "29.4.3"
+        },
+        {
+          "Details": {
+            "GitCommit": "77c84241c7cbdd9b4eca2591793e3d4f4317c590"
+          },
+          "Name": "containerd",
+          "Version": "v2.2.3"
+        },
+        {
+          "Details": {
+            "GitCommit": "v1.3.5-0-g488fc13e"
+          },
+          "Name": "runc",
+          "Version": "1.3.5"
+        },
+        {
+          "Details": {
+            "GitCommit": "de40ad0"
+          },
+          "Name": "docker-init",
+          "Version": "0.19.0"
+        }
+      ],
+      "GitCommit": "56be731",
+      "GoVersion": "go1.26.2",
+      "KernelVersion": "6.6.114.1-microsoft-standard-WSL2",
+      "MinAPIVersion": "1.40",
+      "Os": "linux",
+      "Platform": {
+        "Name": "Docker Desktop 4.73.1 (226574)"
+      },
+      "Version": "29.4.3"
+    }
+  },
+  "expected_sandbox_image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+  "local_base_repo_digests": [
+    "python@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285"
+  ],
+  "platform": "Windows + Docker Desktop + WSL2 Linux engine",
+  "sandbox_image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+  "sandbox_image_matches_expected": true,
+  "trusted_base_image_digest": "sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285"
+}

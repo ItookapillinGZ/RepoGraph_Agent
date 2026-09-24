@@ -1,0 +1,316 @@
+{
+  "all_semantically_equivalent": true,
+  "candidate_count": 5,
+  "comparisons": [
+    {
+      "candidate_sha256": "4e1533a0f007dec3538871a9e73004eb8621a3722efbcac4a2404245da74974a",
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/email-domain-policy/execution-03/candidate-03.json",
+      "classification_equivalent": true,
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "docker": {
+        "base_commit": "b7d62954a21835f9a641dd375653814a5345dec3",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "ad043ff5d91236d94ede0ea0179f361fcf56cb75effdd30b46e93be2f88e61b5",
+        "provenance": {
+          "backend": "docker",
+          "cap_drop_all": true,
+          "cpu_limit": 1.0,
+          "image": "repograph-sandbox:local",
+          "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+          "memory_limit_mb": 512,
+          "network": "none",
+          "no_new_privileges": true,
+          "pids_limit": 64,
+          "read_only_root": true,
+          "sandboxed": true,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "host": {
+        "base_commit": "b7d62954a21835f9a641dd375653814a5345dec3",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "ad043ff5d91236d94ede0ea0179f361fcf56cb75effdd30b46e93be2f88e61b5",
+        "provenance": {
+          "backend": "host",
+          "cap_drop_all": false,
+          "cpu_limit": null,
+          "image": null,
+          "image_id": null,
+          "memory_limit_mb": null,
+          "network": "host",
+          "no_new_privileges": false,
+          "pids_limit": null,
+          "read_only_root": false,
+          "sandboxed": false,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "semantically_equivalent": true,
+      "task_id": "email-domain-policy"
+    },
+    {
+      "candidate_sha256": "5de137b3a54249cd480e3abedba95d77b868c388d120b0427a3dc6f6c75b9fae",
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/event-retry-deduplication/execution-01/candidate-03.json",
+      "classification_equivalent": true,
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "docker": {
+        "base_commit": "33648acbf41b128a21963f5a72ce205275f08127",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "cc6b2322d49cd44d898b0494ac370b296530c0bcb3ccf10d083d1bb698cc1595",
+        "provenance": {
+          "backend": "docker",
+          "cap_drop_all": true,
+          "cpu_limit": 1.0,
+          "image": "repograph-sandbox:local",
+          "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+          "memory_limit_mb": 512,
+          "network": "none",
+          "no_new_privileges": true,
+          "pids_limit": 64,
+          "read_only_root": true,
+          "sandboxed": true,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "host": {
+        "base_commit": "33648acbf41b128a21963f5a72ce205275f08127",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "cc6b2322d49cd44d898b0494ac370b296530c0bcb3ccf10d083d1bb698cc1595",
+        "provenance": {
+          "backend": "host",
+          "cap_drop_all": false,
+          "cpu_limit": null,
+          "image": null,
+          "image_id": null,
+          "memory_limit_mb": null,
+          "network": "host",
+          "no_new_privileges": false,
+          "pids_limit": null,
+          "read_only_root": false,
+          "sandboxed": false,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "semantically_equivalent": true,
+      "task_id": "event-retry-deduplication"
+    },
+    {
+      "candidate_sha256": "6862cf99e6a38b3073d6da6a57ff53ba012483ceeb9d5f84c223b5eb3cccf390",
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/inventory-reservation-atomicity/execution-01/candidate-01.json",
+      "classification_equivalent": true,
+      "config": "no_exploration",
+      "correction_rounds_used": 0,
+      "docker": {
+        "base_commit": "65d0c05fa29779ad9708ef9519cf0e81b7a9ce95",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "81f39021087a5b3d5035872e156ee2ad436668c4765147134165e095c90c4933",
+        "provenance": {
+          "backend": "docker",
+          "cap_drop_all": true,
+          "cpu_limit": 1.0,
+          "image": "repograph-sandbox:local",
+          "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+          "memory_limit_mb": 512,
+          "network": "none",
+          "no_new_privileges": true,
+          "pids_limit": 64,
+          "read_only_root": true,
+          "sandboxed": true,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "host": {
+        "base_commit": "65d0c05fa29779ad9708ef9519cf0e81b7a9ce95",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "81f39021087a5b3d5035872e156ee2ad436668c4765147134165e095c90c4933",
+        "provenance": {
+          "backend": "host",
+          "cap_drop_all": false,
+          "cpu_limit": null,
+          "image": null,
+          "image_id": null,
+          "memory_limit_mb": null,
+          "network": "host",
+          "no_new_privileges": false,
+          "pids_limit": null,
+          "read_only_root": false,
+          "sandboxed": false,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "semantically_equivalent": true,
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "candidate_sha256": "94ad81fa2b721be1ec286d06d71410f40382aa3516d47bfc86aa9d960867f6ce",
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/invoice-rounding-policy/execution-01/candidate-03.json",
+      "classification_equivalent": true,
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "docker": {
+        "base_commit": "bde01ac2e8f3dda72d686bc14f21b264f03516ae",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "99fcdd9f2029e543189953fdc700bd94077543f06c1ad742aad333f7dd58179b",
+        "provenance": {
+          "backend": "docker",
+          "cap_drop_all": true,
+          "cpu_limit": 1.0,
+          "image": "repograph-sandbox:local",
+          "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+          "memory_limit_mb": 512,
+          "network": "none",
+          "no_new_privileges": true,
+          "pids_limit": 64,
+          "read_only_root": true,
+          "sandboxed": true,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "host": {
+        "base_commit": "bde01ac2e8f3dda72d686bc14f21b264f03516ae",
+        "exit_code": 0,
+        "failure_category": null,
+        "failure_kind": null,
+        "hidden_evaluator_sha256": "99fcdd9f2029e543189953fdc700bd94077543f06c1ad742aad333f7dd58179b",
+        "provenance": {
+          "backend": "host",
+          "cap_drop_all": false,
+          "cpu_limit": null,
+          "image": null,
+          "image_id": null,
+          "memory_limit_mb": null,
+          "network": "host",
+          "no_new_privileges": false,
+          "pids_limit": null,
+          "read_only_root": false,
+          "sandboxed": false,
+          "timeout_seconds": 120.0
+        },
+        "resolved": true,
+        "status": "passed"
+      },
+      "semantically_equivalent": true,
+      "task_id": "invoice-rounding-policy"
+    },
+    {
+      "candidate_sha256": "80b611eafb352ba8344c94bd15f5c95448e4d591436a7acb0ce1f2eece12f986",
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/registry-alias-collision/execution-01/candidate-03.json",
+      "classification_equivalent": true,
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "docker": {
+        "base_commit": "1c480fa2c6ecb636bcb065f9626afdbd06c22382",
+        "exit_code": 1,
+        "failure_category": "test_failure",
+        "failure_kind": "assertion_failure",
+        "hidden_evaluator_sha256": "6be5c0cf4ecb4b0a532ef742cb41a4d77345666e77948a8ac8ee1a869d346bf5",
+        "provenance": {
+          "backend": "docker",
+          "cap_drop_all": true,
+          "cpu_limit": 1.0,
+          "image": "repograph-sandbox:local",
+          "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+          "memory_limit_mb": 512,
+          "network": "none",
+          "no_new_privileges": true,
+          "pids_limit": 64,
+          "read_only_root": true,
+          "sandboxed": true,
+          "timeout_seconds": 120.0
+        },
+        "resolved": false,
+        "status": "failed"
+      },
+      "host": {
+        "base_commit": "1c480fa2c6ecb636bcb065f9626afdbd06c22382",
+        "exit_code": 1,
+        "failure_category": "test_failure",
+        "failure_kind": "assertion_failure",
+        "hidden_evaluator_sha256": "6be5c0cf4ecb4b0a532ef742cb41a4d77345666e77948a8ac8ee1a869d346bf5",
+        "provenance": {
+          "backend": "host",
+          "cap_drop_all": false,
+          "cpu_limit": null,
+          "image": null,
+          "image_id": null,
+          "memory_limit_mb": null,
+          "network": "host",
+          "no_new_privileges": false,
+          "pids_limit": null,
+          "read_only_root": false,
+          "sandboxed": false,
+          "timeout_seconds": 120.0
+        },
+        "resolved": false,
+        "status": "failed"
+      },
+      "semantically_equivalent": true,
+      "task_id": "registry-alias-collision"
+    }
+  ],
+  "selected": [
+    {
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/email-domain-policy/execution-03/candidate-03.json",
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "task_id": "email-domain-policy"
+    },
+    {
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/event-retry-deduplication/execution-01/candidate-03.json",
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "task_id": "event-retry-deduplication"
+    },
+    {
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/inventory-reservation-atomicity/execution-01/candidate-01.json",
+      "config": "no_exploration",
+      "correction_rounds_used": 0,
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/invoice-rounding-policy/execution-01/candidate-03.json",
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "task_id": "invoice-rounding-policy"
+    },
+    {
+      "candidate_snapshot": "h2-3d-openai-luna-no-exploration-931c80c0516a/registry-alias-collision/execution-01/candidate-03.json",
+      "config": "no_exploration",
+      "correction_rounds_used": 2,
+      "task_id": "registry-alias-collision"
+    }
+  ],
+  "selection_frozen_before_docker_replay": true,
+  "selection_rule": "From the authoritative H2.3E recovery results, use config=no_exploration; sort unique task IDs alphabetically; select the first four, then include registry-alias-collision. Selection is frozen before Docker replay and is independent of stored or replayed pass/fail outcomes.",
+  "semantic_equivalence_count": 5
+}

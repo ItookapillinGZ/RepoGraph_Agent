@@ -1,0 +1,69 @@
+{
+  "campaign_id": "h2-2-local-92225e6ffd43",
+  "dataset": "local:C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\local-v1.jsonl",
+  "evaluator": "local",
+  "selection_rule": "All ten local-v1 tasks sorted by task ID; smoke is the first sorted multi_file_fix; pilot is the first sorted distinct task in bug_fix, multi_file_fix, and test_regression/behavioral_refactor.",
+  "task_timeout_seconds": 900.0,
+  "tasks": [
+    {
+      "base_commit": "44a4960fd6a607e2b6d44b222962d9218ee7f6d0",
+      "category": "bug_fix",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\bugfix-arithmetic",
+      "task_id": "bugfix-arithmetic"
+    },
+    {
+      "base_commit": "ae673ddd24890573d92a62573761854dfdc7f35f",
+      "category": "test_regression",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\cache-key-case",
+      "task_id": "cache-key-case"
+    },
+    {
+      "base_commit": "2f646c11b08b193160d41b6bad81e4b701bde0a6",
+      "category": "edge_case",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\edge-clamp",
+      "task_id": "edge-clamp"
+    },
+    {
+      "base_commit": "f00fcbc559e83452d7f0c6aa757d140127b848a0",
+      "category": "edge_case",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\edge-division",
+      "task_id": "edge-division"
+    },
+    {
+      "base_commit": "fdd208f151975e1263aefd9e3df5aac161b027db",
+      "category": "small_feature",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\feature-currency",
+      "task_id": "feature-currency"
+    },
+    {
+      "base_commit": "70f0c4eada71ce31daff3e4214d803ea9e3f812e",
+      "category": "small_feature",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\feature-even",
+      "task_id": "feature-even"
+    },
+    {
+      "base_commit": "07ae15bf5eaccc2c6c5448cb456feba5e90e5137",
+      "category": "bug_fix",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\format-slug",
+      "task_id": "format-slug"
+    },
+    {
+      "base_commit": "17a522bc4d5e1d4b71e3bd7f52772995ef50d768",
+      "category": "multi_file_fix",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\multi-file-validation",
+      "task_id": "multi-file-validation"
+    },
+    {
+      "base_commit": "fb47da1c7848ac4b5b7d1cca996c0826f9868557",
+      "category": "behavioral_refactor",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\refactor-tags",
+      "task_id": "refactor-tags"
+    },
+    {
+      "base_commit": "7ae3ded661bf2623d4365b3fe491b3a560f9c1a6",
+      "category": "test_regression",
+      "repository": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_2_runtime\\fixtures\\sources\\regression-bool",
+      "task_id": "regression-bool"
+    }
+  ]
+}

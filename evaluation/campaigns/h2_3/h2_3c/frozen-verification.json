@@ -1,0 +1,193 @@
+{
+  "agent_semantic_files_all_predate_parent_campaign": true,
+  "agent_semantic_fingerprint": {
+    "digest": "4e69691577acad31b711f584f965512c292d45e092182d3df2560c2966c6d810",
+    "files": [
+      {
+        "last_modified": "2026-09-05T09:47:02.150285+08:00",
+        "path": "agent.py",
+        "sha256": "270f067362890347ad2ee6e0ecc3a8ad683945de2fb1a1ce4350f2badf11d8b4"
+      },
+      {
+        "last_modified": "2026-08-30T15:59:14.602225+08:00",
+        "path": "change_set.py",
+        "sha256": "8d6c14225f45f20d8cfc8c5791946de5f43472d13d4c214f214b7764e28271b7"
+      },
+      {
+        "last_modified": "2026-08-29T20:25:12.344684+08:00",
+        "path": "diff_context.py",
+        "sha256": "454e323e3780fbf92d09bc00f09aa9b9b5d0aa04110908b0bd4c69f9cfff521c"
+      },
+      {
+        "last_modified": "2026-09-05T01:30:34.209066+08:00",
+        "path": "engineering_plan.py",
+        "sha256": "94766bfb02032d71935ae7946ba57e00b40ac8d61ac4633beb1457f3b3d6d343"
+      },
+      {
+        "last_modified": "2026-08-31T20:37:07.514062+08:00",
+        "path": "fix_application.py",
+        "sha256": "219a09d524ffd60870bfdb5f3e3e4d28c6ef0a8dbf1a1177457e21c8749dd859"
+      },
+      {
+        "last_modified": "2026-08-30T00:03:44.048017+08:00",
+        "path": "fix_context.py",
+        "sha256": "3abb686a5b975d78e2932864c53cb898e0ebf7bbb24459b8c378e72b61e4d5d3"
+      },
+      {
+        "last_modified": "2026-08-31T11:18:50.780626+08:00",
+        "path": "fix_verification.py",
+        "sha256": "a57999df0789e2583ddd0824de51152c190a5d4e18c463c39f77a9a3d95bee74"
+      },
+      {
+        "last_modified": "2026-09-01T10:21:52.500021+08:00",
+        "path": "git_delivery.py",
+        "sha256": "3df25f05c95a469f893ee6e86054a10c41ca9b0adfa3438a7265bea7ddb1a06c"
+      },
+      {
+        "last_modified": "2026-08-30T19:47:11.430029+08:00",
+        "path": "git_diff.py",
+        "sha256": "2935885186c61959384c4062c59e023e7b94392f51573523bbe8b0678d3dcf02"
+      },
+      {
+        "last_modified": "2026-09-01T22:08:53.386336+08:00",
+        "path": "github_delivery.py",
+        "sha256": "a4847358f4e3ae6ff080468abe886b436663ccd8a81b961244690f86fe4913b4"
+      },
+      {
+        "last_modified": "2026-08-30T20:03:51.404824+08:00",
+        "path": "github_pr.py",
+        "sha256": "cd6c05c62321d50bdd0f0466dd70340cb00fd108e225095d70cb89957f8df58a"
+      },
+      {
+        "last_modified": "2026-09-05T11:02:03.899043+08:00",
+        "path": "model_defaults.py",
+        "sha256": "3c00f8acdd1233c38de3ca6ab7781172a2a4a9b153d7fd5e293c77cae6423fe7"
+      },
+      {
+        "last_modified": "2026-09-01T00:53:05.117876+08:00",
+        "path": "plan_application.py",
+        "sha256": "99ccd1cb751c307651c020f78abed8f1d2ee023a0794ea721f6e938a67009f67"
+      },
+      {
+        "last_modified": "2026-09-05T01:30:34.210573+08:00",
+        "path": "plan_execution.py",
+        "sha256": "4bbe20c08dddc11ea1d541e2217970a20fa67546a0d40efe593dafb182dd6ce0"
+      },
+      {
+        "last_modified": "2026-08-29T14:51:20.868972+08:00",
+        "path": "repository_context.py",
+        "sha256": "cb10852791fc334369f075b5f0f5a07b3134789e2f79c7e95eee01c811a654b0"
+      },
+      {
+        "last_modified": "2026-09-05T09:47:36.445081+08:00",
+        "path": "repository_exploration.py",
+        "sha256": "3c4d41664baa199eafdd50ebbd25f51d0b986300361f8ccba12e97c4c419d6e7"
+      },
+      {
+        "last_modified": "2026-08-31T00:07:55.567136+08:00",
+        "path": "repository_test_tool.py",
+        "sha256": "09b4953d631104c4f5436ff97464e84335783a9455578ef8910fd828c1788d2c"
+      },
+      {
+        "last_modified": "2026-08-30T22:28:30.790188+08:00",
+        "path": "repository_tools.py",
+        "sha256": "c1b9b37dfcbb986d2389843c6a7625698ca4fa3b957761ce6a8d409bf99a37b6"
+      },
+      {
+        "last_modified": "2026-08-30T11:21:43.004500+08:00",
+        "path": "review_models.py",
+        "sha256": "32614a12478e7c1842628b3aa7688be658689f78c3cac0a303e6b4e29112ead4"
+      },
+      {
+        "last_modified": "2026-08-31T20:26:06.179753+08:00",
+        "path": "source_file_encoding.py",
+        "sha256": "c4e14df37376c425b236a8561cc74697ef8aae3ef5995d770308e5e7f2c5e6ed"
+      },
+      {
+        "last_modified": "2026-09-05T22:48:06.814394+08:00",
+        "path": "static_analysis.py",
+        "sha256": "845c36951eb52669972481580614160a21a2a56b3e76458a8edf4d86c4d16564"
+      },
+      {
+        "last_modified": "2026-08-31T11:00:25.551361+08:00",
+        "path": "temporary_workspace.py",
+        "sha256": "fe528c00016ed7a926f59e776c2f4ec60951e16d68afce7df7f71946e9bf3e06"
+      },
+      {
+        "last_modified": "2026-08-31T00:06:58.318836+08:00",
+        "path": "test_execution.py",
+        "sha256": "279dff68f8dc3658839e6543e0672a75f0e2c8f693ca9afaa6b42bc0ce2c823b"
+      }
+    ]
+  },
+  "allowed_post_campaign_changes": [
+    "README.md",
+    "evaluation/campaigns/**",
+    "evaluation orchestration/report code"
+  ],
+  "coarse_source_digest_matches": false,
+  "config_sha256": "22ad0d9769f79041766e2373dd640de8a3e2e34e28e8301232a06cd0f2d6d1c8",
+  "continuation_id": "h2_3c",
+  "current_source_tree_digest": "ead9a8054320b742ef9fa72e6fcfea9e52cbe988dd1e9d05ed93c139779a0d52",
+  "evaluator_environment": {
+    "evaluator_digest": "b8cfdd50b2b842b225743a0c8f48b836baa9351f3bd524607478c79cb93f153b",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest_version": "9.1.1",
+    "python_version": "3.13.7"
+  },
+  "evaluator_hidden_test_digests": {
+    "batch-rollback-state": "b8cfdd50b2b842b225743a0c8f48b836baa9351f3bd524607478c79cb93f153b",
+    "dependency-load-order": "6660c072a2ca7e4746aa40d3841db23defff383e7e8af4d2099c16a30e89e2a4",
+    "domain-timezone-serialization": "d1a5985061c95012a7983789d6f4cd6ab04752847cf1eb30ecfa84cbe6c36996",
+    "email-domain-policy": "e9ec1f75095b3f89f1ebec8e9fd6f33647c7c3b0e7236d378af0e8de68e5e0b9",
+    "event-retry-deduplication": "a0c9512ad6784639757025406dc3c9bd9c725a2bb68e4bee4dad78b8798a88db",
+    "inventory-reservation-atomicity": "4fd159ae91a31919805b3250a4a67a8c240c250fbf27aa3af895b1c361fcef08",
+    "invoice-rounding-policy": "ece54df5e0c23c3fc2f5123d4b1d93f154f1c51a6cf13f642313122d79d12548",
+    "nested-secret-redaction": "035985ea511bbdd0dfdbea7eb6741d8fe1d9d30b097f483f3dc22d168722cd07",
+    "pagination-zero-cursor": "df0d1a0d1a94013f9353d39929ed2f7af02e2586466bddbbe2176be6aa7658b4",
+    "permission-parent-inheritance": "8f04123b3db0e446cb365b395edc54157c5d16493958f44def13ead458e33cf4",
+    "record-parser-contract": "9d57d7808a3ce82543adce695747b4397c329a56dcd7bbaeaf443734336932c3",
+    "registry-alias-collision": "948f56f7d428c5279ab60965cd638e1b93a389fba866437b0f1b162774bb2bc7",
+    "retry-idempotency-key": "d69b6c7434d78572a806966bd9515d918f7e96feac75328f0a3c5ede230f6266",
+    "session-refresh-persistence": "272d502a17a7e54ecb5bb6abc2eca4a11839dd2c7680813a91da1bd776fa4134",
+    "settings-source-precedence": "257fcecacc68ac51258062643c6d8688f0afd8bd54b8a18f2545881420c1e990",
+    "specific-route-precedence": "3d7d7e6d9113880584f415906a0b857002feadaf60f4d3137ccba754398c548f",
+    "subscription-listener-removal": "ada4d409a86d855be3de202ca66991e2a845d803d96a097283b753f5f697dd21"
+  },
+  "evaluator_kind": "local",
+  "evaluator_sha256": "5c6404ad81100ad4f07a02f9a17c0fe69a764c17f0f1612f14a92eb0487c555e",
+  "evaluator_version": "local-fixed-argv-v3",
+  "formal_task_count": 17,
+  "formal_task_ids": [
+    "batch-rollback-state",
+    "dependency-load-order",
+    "domain-timezone-serialization",
+    "email-domain-policy",
+    "event-retry-deduplication",
+    "inventory-reservation-atomicity",
+    "invoice-rounding-policy",
+    "nested-secret-redaction",
+    "pagination-zero-cursor",
+    "permission-parent-inheritance",
+    "record-parser-contract",
+    "registry-alias-collision",
+    "retry-idempotency-key",
+    "session-refresh-persistence",
+    "settings-source-precedence",
+    "specific-route-precedence",
+    "subscription-listener-removal"
+  ],
+  "full_parent_results": 17,
+  "full_parent_valid_predictions": 16,
+  "historical_recovery_task_ids": [
+    "email-domain-policy",
+    "event-retry-deduplication"
+  ],
+  "no_correction_parent_valid_predictions": 3,
+  "parent_campaign": "h2_3",
+  "parent_manifest_sha256": "491615952fe95a39a230771038161817080918382cced1c4dd2eaa0b11b01bf4",
+  "parent_source_tree_digest": "75789a08116c4b8f3a6f144240b8c1720bb5f118af26068c99a40f417d8fca6f",
+  "python_executable": "C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.venv\\Scripts\\python.exe",
+  "task_set_sha256": "5af022ac410dce955ddf813a01f803e792a4724371e071dac76858698398fccd",
+  "verified_at": "2026-09-09T12:07:18.544798+00:00"
+}

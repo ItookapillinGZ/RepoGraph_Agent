@@ -1,0 +1,62 @@
+{
+  "full": {
+    "average_total_tokens": null,
+    "correction_rounds": 5,
+    "cost": null,
+    "known_recorded_input_tokens": 1202620,
+    "known_recorded_llm_calls": 203,
+    "known_recorded_output_tokens": 44630,
+    "known_recorded_total_tokens": 1247250,
+    "known_test_calls": 43,
+    "known_tool_calls": 102,
+    "runtime_seconds": 4911.123268199997,
+    "tasks_with_complete_usage": 14,
+    "tasks_with_incomplete_usage": 3,
+    "telemetry_completeness_rate": 0.8235294117647058
+  },
+  "no_agentic_test": {
+    "average_total_tokens": null,
+    "correction_rounds": 0,
+    "cost": null,
+    "known_recorded_input_tokens": 0,
+    "known_recorded_llm_calls": 0,
+    "known_recorded_output_tokens": 0,
+    "known_recorded_total_tokens": 0,
+    "known_test_calls": 0,
+    "known_tool_calls": 0,
+    "runtime_seconds": 0,
+    "tasks_with_complete_usage": 0,
+    "tasks_with_incomplete_usage": 0,
+    "telemetry_completeness_rate": 0.0
+  },
+  "no_correction": {
+    "average_total_tokens": null,
+    "correction_rounds": 0,
+    "cost": null,
+    "known_recorded_input_tokens": 614797,
+    "known_recorded_llm_calls": 158,
+    "known_recorded_output_tokens": 38146,
+    "known_recorded_total_tokens": 652943,
+    "known_test_calls": 32,
+    "known_tool_calls": 96,
+    "runtime_seconds": 4430.558340300049,
+    "tasks_with_complete_usage": 9,
+    "tasks_with_incomplete_usage": 8,
+    "telemetry_completeness_rate": 0.5294117647058824
+  },
+  "no_exploration": {
+    "average_total_tokens": null,
+    "correction_rounds": 7,
+    "cost": null,
+    "known_recorded_input_tokens": 330721,
+    "known_recorded_llm_calls": 75,
+    "known_recorded_output_tokens": 25932,
+    "known_recorded_total_tokens": 356653,
+    "known_test_calls": 22,
+    "known_tool_calls": 42,
+    "runtime_seconds": 2423.8148399000056,
+    "tasks_with_complete_usage": 5,
+    "tasks_with_incomplete_usage": 5,
+    "telemetry_completeness_rate": 0.5
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "api_base_url": "https://api.relayapi.ai/v1",
+  "configured_model": "gpt-5.6-sol",
+  "configured_provider": "openai_compatible",
+  "continuation_id": "h2_3c",
+  "created_at": "2026-09-09T12:07:18.554189+00:00",
+  "experiment_ids": {
+    "no_agentic_test": "h2-3c-no-agentic-test-ebd361a70a69",
+    "no_correction": "h2-3c-no-correction-de8f28634324",
+    "no_exploration": "h2-3c-no-exploration-e943d766c820"
+  },
+  "formal_task_ids": [
+    "batch-rollback-state",
+    "dependency-load-order",
+    "domain-timezone-serialization",
+    "email-domain-policy",
+    "event-retry-deduplication",
+    "inventory-reservation-atomicity",
+    "invoice-rounding-policy",
+    "nested-secret-redaction",
+    "pagination-zero-cursor",
+    "permission-parent-inheritance",
+    "record-parser-contract",
+    "registry-alias-collision",
+    "retry-idempotency-key",
+    "session-refresh-persistence",
+    "settings-source-precedence",
+    "specific-route-precedence",
+    "subscription-listener-removal"
+  ],
+  "historical_recovery_task_ids": [
+    "email-domain-policy",
+    "event-retry-deduplication"
+  ],
+  "id": "h2-3c-continuation",
+  "infrastructure_retry_reserve": 12,
+  "live_task_runs_consumed": 29,
+  "max_completion_tokens": 8192,
+  "maximum_live_task_runs": 60,
+  "parent_campaign": "h2_3",
+  "parent_campaign_id": "h2-3-local-5f33ea56d2cc",
+  "planned_base_recovery_task_runs": 48,
+  "reasoning_effort": "none",
+  "stage": "H2.3C",
+  "status": "stopped",
+  "stop_reason": "no_exploration stopped after three consecutive final infrastructure failures.",
+  "temperature": 0.0,
+  "updated_at": "2026-09-09T14:09:10.720626+00:00",
+  "workers": 1
+}

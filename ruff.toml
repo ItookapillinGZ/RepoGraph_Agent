@@ -1,0 +1,6 @@
+extend-exclude = [
+    ".evaluation",
+    ".venv",
+    "studio/node_modules",
+    "studio/test-results",
+]

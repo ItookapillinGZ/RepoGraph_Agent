@@ -1,0 +1,7 @@
+{
+  "authoritative_final_grading": "regrade/comparison.json",
+  "llm_api_calls_during_regrade": 0,
+  "original_comparison_valid_for_quality": false,
+  "original_results_preserved": true,
+  "reason": "Portable dataset commands beginning with 'python' resolved to a system interpreter without pytest inside the isolated worker. Pytest's import failure returned exit code 1 and was misclassified as an assertion failure."
+}

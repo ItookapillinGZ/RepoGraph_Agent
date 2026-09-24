@@ -1,0 +1,118 @@
+{
+  "all_semantically_matched": true,
+  "candidate_count": 5,
+  "comparisons": [
+    {
+      "artifact_id": "f903b02e-31ce-4194-a78c-fcdee5fe930d",
+      "candidate_sha256": "4e1533a0f007dec3538871a9e73004eb8621a3722efbcac4a2404245da74974a",
+      "environment_match": true,
+      "original": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay_id": "1e281223-bac3-4d93-a65a-98245cff14d1",
+      "semantic_match": true,
+      "task_id": "email-domain-policy"
+    },
+    {
+      "artifact_id": "b6450dcd-2f07-4f3a-892a-58d30554c15a",
+      "candidate_sha256": "5de137b3a54249cd480e3abedba95d77b868c388d120b0427a3dc6f6c75b9fae",
+      "environment_match": true,
+      "original": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay_id": "a5f4a996-e6d7-496f-850a-ed996464ba8f",
+      "semantic_match": true,
+      "task_id": "event-retry-deduplication"
+    },
+    {
+      "artifact_id": "377f01e8-d542-46cb-881d-40324def5439",
+      "candidate_sha256": "6862cf99e6a38b3073d6da6a57ff53ba012483ceeb9d5f84c223b5eb3cccf390",
+      "environment_match": true,
+      "original": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay_id": "40aa0952-f41e-46f6-a73e-e6ea6a5256e3",
+      "semantic_match": true,
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "artifact_id": "baa00ff1-ea61-4308-bcdf-ca81a915d19c",
+      "candidate_sha256": "94ad81fa2b721be1ec286d06d71410f40382aa3516d47bfc86aa9d960867f6ce",
+      "environment_match": true,
+      "original": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay": {
+        "exit_classification": "passed:none:none",
+        "normalized_report_digest": null,
+        "resolved": true,
+        "status": "passed"
+      },
+      "replay_id": "4a3db65d-0faa-432a-96bb-3760aba228bf",
+      "semantic_match": true,
+      "task_id": "invoice-rounding-policy"
+    },
+    {
+      "artifact_id": "1530a29e-8d0b-4f3e-b752-901b0104d775",
+      "candidate_sha256": "80b611eafb352ba8344c94bd15f5c95448e4d591436a7acb0ce1f2eece12f986",
+      "environment_match": true,
+      "original": {
+        "exit_classification": "failed:test_failure:assertion_failure",
+        "normalized_report_digest": null,
+        "resolved": false,
+        "status": "failed"
+      },
+      "replay": {
+        "exit_classification": "failed:test_failure:assertion_failure",
+        "normalized_report_digest": null,
+        "resolved": false,
+        "status": "failed"
+      },
+      "replay_id": "85132608-e9d6-48d2-80b6-4ea282aefc45",
+      "semantic_match": true,
+      "task_id": "registry-alias-collision"
+    }
+  ],
+  "expected_sandbox_image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+  "g4_g5_calls": 0,
+  "h2_sources_modified": false,
+  "openai_calls": 0,
+  "sandbox_backend": "docker",
+  "sandbox_image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+  "schema_version": 1,
+  "selection_rule": "From the authoritative H2.3E recovery results, use config=no_exploration; sort unique task IDs alphabetically; select the first four, then include registry-alias-collision. Selection is frozen before Docker replay and is independent of stored or replayed pass/fail outcomes.",
+  "semantic_match_count": 5,
+  "semantic_match_rate": 1.0,
+  "source_artifacts": ".evaluation/h2_3d_openai_luna_runtime/artifacts",
+  "source_results": "evaluation/campaigns/h2_3e_openai_luna_recovery/results.jsonl"
+}

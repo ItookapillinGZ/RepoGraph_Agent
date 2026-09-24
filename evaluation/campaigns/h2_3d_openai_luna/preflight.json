@@ -1,0 +1,20 @@
+{
+  "api_base_url": "https://api.openai.com/v1",
+  "api_key_status": "configured",
+  "configured_model": "gpt-5.6-luna",
+  "configured_provider": "openai_compatible",
+  "input_tokens": 66,
+  "llm_calls": 1,
+  "max_completion_tokens": 8192,
+  "model_seed": null,
+  "model_temperature": 0.0,
+  "output_tokens": 13,
+  "reasoning_effort": "none",
+  "resolved_models": [
+    "gpt-5.6-luna"
+  ],
+  "structured_output_succeeded": true,
+  "telemetry_incomplete": false,
+  "timestamp": "2026-09-13T07:32:16.849769+00:00",
+  "total_tokens": 79
+}

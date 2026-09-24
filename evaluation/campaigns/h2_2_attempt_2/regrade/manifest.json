@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-06T02:33:31.002966+00:00",
+  "evaluator_version": "local-fixed-argv-v2",
+  "exact_first_attempt_metrics_recoverable": false,
+  "llm_api_calls": 0,
+  "original_history_preserved": true,
+  "reason": "Portable dataset commands beginning with 'python' resolved to a system interpreter without pytest inside the isolated worker. Pytest's import failure returned exit code 1 and was misclassified as an assertion failure.",
+  "regraded_predictions": 38,
+  "schema_version": 1,
+  "source_campaign_id": "h2-2-local-92225e6ffd43",
+  "source_manifest_sha256": "a7a708a82c6e2f5466b41cfef2d4af69b7b99c5dbb0d2f1eb686d291ba0e59d2",
+  "task_runs_represented": 44,
+  "unavailable_predictions": 6
+}

@@ -1,0 +1,52 @@
+{
+  "candidate_verification": {
+    "backend": "docker",
+    "passed": true,
+    "provenance": {
+      "backend": "docker",
+      "cap_drop_all": true,
+      "cpu_limit": 1.0,
+      "image": "repograph-sandbox:local",
+      "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+      "memory_limit_mb": 512,
+      "network": "none",
+      "no_new_privileges": true,
+      "pids_limit": 64,
+      "read_only_root": true,
+      "sandboxed": true,
+      "timeout_seconds": 30.0
+    },
+    "sandboxed": true,
+    "status": "verified",
+    "test_status": "passed"
+  },
+  "evaluator": {
+    "failure_kind": null,
+    "passed": true,
+    "provenance": {
+      "backend": "docker",
+      "cap_drop_all": true,
+      "cpu_limit": 1.0,
+      "image": "repograph-sandbox:local",
+      "image_id": "sha256:c66fc8697a59ed31747845eb432dd05ae3371d12a4ed23286708cc8d67f96d57",
+      "memory_limit_mb": 512,
+      "network": "none",
+      "no_new_privileges": true,
+      "pids_limit": 64,
+      "read_only_root": true,
+      "sandboxed": true,
+      "timeout_seconds": 30.0
+    },
+    "status": "passed"
+  },
+  "explorer": {
+    "container_assertion": "/.dockerenv and uid=10001",
+    "deterministic_model": true,
+    "passed": true,
+    "status": "completed",
+    "test_tool_call_count": 1,
+    "tests_run": [
+      "tests/test_container.py"
+    ]
+  }
+}

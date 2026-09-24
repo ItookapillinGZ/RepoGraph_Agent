@@ -1,0 +1,8 @@
+{
+  "credential_hits": [],
+  "docker_auth_token_hits": 0,
+  "env_file_persisted": false,
+  "passed": true,
+  "real_api_credential_hits": 0,
+  "test_secret_hits": 0
+}

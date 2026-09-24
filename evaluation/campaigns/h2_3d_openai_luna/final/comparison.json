@@ -1,0 +1,1341 @@
+{
+  "analysis_seed": 20260904,
+  "authoritative_final": true,
+  "bootstrap_resamples": 10000,
+  "campaign_id": "h2_3e_openai_luna_recovery",
+  "configs": {
+    "full": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 1.0,
+        "point_estimate": 1.0,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 1.0,
+      "exact_final_resolved": 17,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.7058823529411765,
+        "point_estimate": 0.8823529411764706,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 0.8823529411764706,
+      "exact_first_attempt_resolved": 15,
+      "exact_regraded_predictions": 17,
+      "metrics": {
+        "assigned_tasks": 17,
+        "average_changed_files": 1.6470588235294117,
+        "average_correction_rounds": 0.8235294117647058,
+        "average_cost": null,
+        "average_duration_seconds": 67.22584927647361,
+        "average_input_tokens": 15679.235294117647,
+        "average_llm_calls": 13.117647058823529,
+        "average_output_tokens": 1973.4117647058824,
+        "average_test_calls": 3.2941176470588234,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": 17652.647058823528,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 1.0,
+        "completed_with_prediction": 17,
+        "correction_attempted_tasks": 8,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": 0.0,
+        "correction_rescue_rate": 0.25,
+        "correction_rescued_tasks": 2,
+        "correction_uplift_absolute": 0.11764705882352944,
+        "correction_uplift_relative": 0.1333333333333333,
+        "end_to_end_resolve_rate": 1.0,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 17
+        },
+        "failure_breakdown": {},
+        "final_resolve_rate": 1.0,
+        "final_resolved": 17,
+        "first_attempt_resolve_rate": 0.8823529411764706,
+        "first_attempt_resolved": 15,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.0,
+        "infrastructure_failures": 0,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 55.4903891000431,
+        "median_llm_calls": 9.0,
+        "median_total_tokens": 11810.0,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 17,
+        "resolve_rate": 1.0,
+        "review_failure_rate": 0.17647058823529413,
+        "tasks_entering_correction": 8,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 2,
+        "tasks_resolved": 17,
+        "tasks_total": 17,
+        "tasks_using_correction": 8,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": 17652.647058823528,
+        "tokens_per_task": 17652.647058823528,
+        "total_input_tokens": 266547,
+        "total_llm_calls": 223,
+        "total_output_tokens": 33548,
+        "total_tokens": 300095,
+        "verification_failure_rate": 0.0
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [
+        "registry-alias-collision",
+        "subscription-listener-removal"
+      ],
+      "tasks_entering_correction": 8,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 2
+    },
+    "no_agentic_test": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8235294117647058,
+        "point_estimate": 0.9411764705882353,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 0.9411764705882353,
+      "exact_final_resolved": 16,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8235294117647058,
+        "point_estimate": 0.9411764705882353,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 0.9411764705882353,
+      "exact_first_attempt_resolved": 16,
+      "exact_regraded_predictions": 17,
+      "metrics": {
+        "assigned_tasks": 17,
+        "average_changed_files": 1.6470588235294117,
+        "average_correction_rounds": 0.29411764705882354,
+        "average_cost": null,
+        "average_duration_seconds": 46.24746586470578,
+        "average_input_tokens": 11536.058823529413,
+        "average_llm_calls": 10.470588235294118,
+        "average_output_tokens": 1271.8235294117646,
+        "average_test_calls": 2.411764705882353,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": 12807.882352941177,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 0.9411764705882353,
+        "completed_with_prediction": 17,
+        "correction_attempted_tasks": 3,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": 0.0,
+        "correction_rescue_rate": 0.0,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": 0.0,
+        "end_to_end_resolve_rate": 0.9411764705882353,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 17
+        },
+        "failure_breakdown": {
+          "valid_prediction_unresolved": 1
+        },
+        "final_resolve_rate": 0.9411764705882353,
+        "final_resolved": 16,
+        "first_attempt_resolve_rate": 0.9411764705882353,
+        "first_attempt_resolved": 16,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.0,
+        "infrastructure_failures": 0,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 38.14895070000057,
+        "median_llm_calls": 9.0,
+        "median_total_tokens": 10770.0,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 17,
+        "resolve_rate": 0.9411764705882353,
+        "review_failure_rate": 0.058823529411764705,
+        "tasks_entering_correction": 3,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 0,
+        "tasks_resolved": 16,
+        "tasks_total": 17,
+        "tasks_using_correction": 3,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": 13608.375,
+        "tokens_per_task": 12807.882352941177,
+        "total_input_tokens": 196113,
+        "total_llm_calls": 178,
+        "total_output_tokens": 21621,
+        "total_tokens": 217734,
+        "verification_failure_rate": 0.058823529411764705
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [],
+      "tasks_entering_correction": 3,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 0
+    },
+    "no_correction": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8235294117647058,
+        "point_estimate": 0.9411764705882353,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 0.9411764705882353,
+      "exact_final_resolved": 16,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8235294117647058,
+        "point_estimate": 0.9411764705882353,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 0.9411764705882353,
+      "exact_first_attempt_resolved": 16,
+      "exact_regraded_predictions": 17,
+      "metrics": {
+        "assigned_tasks": 17,
+        "average_changed_files": 1.6470588235294117,
+        "average_correction_rounds": 0.0,
+        "average_cost": null,
+        "average_duration_seconds": 49.901988635298466,
+        "average_input_tokens": 8821.64705882353,
+        "average_llm_calls": 8.352941176470589,
+        "average_output_tokens": 1082.9411764705883,
+        "average_test_calls": 2.0,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": 9904.588235294117,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 0.9411764705882353,
+        "completed_with_prediction": 17,
+        "correction_attempted_tasks": 0,
+        "correction_regressed_tasks": 0,
+        "correction_regression_rate": null,
+        "correction_rescue_rate": null,
+        "correction_rescued_tasks": 0,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": 0.0,
+        "end_to_end_resolve_rate": 0.9411764705882353,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 17
+        },
+        "failure_breakdown": {
+          "valid_prediction_unresolved": 1
+        },
+        "final_resolve_rate": 0.9411764705882353,
+        "final_resolved": 16,
+        "first_attempt_resolve_rate": 0.9411764705882353,
+        "first_attempt_resolved": 16,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.0,
+        "infrastructure_failures": 0,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 0.0,
+        "median_duration_seconds": 45.66855310002575,
+        "median_llm_calls": 9.0,
+        "median_total_tokens": 10735.0,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 17,
+        "resolve_rate": 0.9411764705882353,
+        "review_failure_rate": 0.35294117647058826,
+        "tasks_entering_correction": 0,
+        "tasks_regressed_after_correction": 0,
+        "tasks_rescued_by_correction": 0,
+        "tasks_resolved": 16,
+        "tasks_total": 17,
+        "tasks_using_correction": 0,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": 10523.625,
+        "tokens_per_task": 9904.588235294117,
+        "total_input_tokens": 149968,
+        "total_llm_calls": 142,
+        "total_output_tokens": 18410,
+        "total_tokens": 168378,
+        "verification_failure_rate": 0.058823529411764705
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [],
+      "rescued_task_ids": [],
+      "tasks_entering_correction": 0,
+      "tasks_regressed_after_correction": 0,
+      "tasks_rescued_by_correction": 0
+    },
+    "no_exploration": {
+      "capability_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8235294117647058,
+        "point_estimate": 0.9411764705882353,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_final_resolve_rate": 0.9411764705882353,
+      "exact_final_resolved": 16,
+      "exact_first_attempt_resolve_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.8235294117647058,
+        "point_estimate": 0.9411764705882353,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 1.0
+      },
+      "exact_first_attempt_resolve_rate": 0.9411764705882353,
+      "exact_first_attempt_resolved": 16,
+      "exact_regraded_predictions": 17,
+      "metrics": {
+        "assigned_tasks": 17,
+        "average_changed_files": 1.588235294117647,
+        "average_correction_rounds": 1.4705882352941178,
+        "average_cost": null,
+        "average_duration_seconds": 68.19157962353181,
+        "average_input_tokens": 12402.70588235294,
+        "average_llm_calls": 11.823529411764707,
+        "average_output_tokens": 2212.470588235294,
+        "average_test_calls": 4.176470588235294,
+        "average_tool_calls": 6.0,
+        "average_total_tokens": 14615.176470588236,
+        "candidate_failure_rate": 0.0,
+        "capability_resolve_rate": 0.9411764705882353,
+        "completed_with_prediction": 17,
+        "correction_attempted_tasks": 13,
+        "correction_regressed_tasks": 1,
+        "correction_regression_rate": 0.07692307692307693,
+        "correction_rescue_rate": 0.07692307692307693,
+        "correction_rescued_tasks": 1,
+        "correction_uplift_absolute": 0.0,
+        "correction_uplift_relative": 0.0,
+        "end_to_end_resolve_rate": 0.9411764705882353,
+        "evaluation_failure_rate": 0.0,
+        "evaluator_breakdown": {
+          "local": 17
+        },
+        "failure_breakdown": {
+          "valid_prediction_unresolved": 1
+        },
+        "final_resolve_rate": 0.9411764705882353,
+        "final_resolved": 16,
+        "first_attempt_resolve_rate": 0.9411764705882353,
+        "first_attempt_resolved": 16,
+        "hard_timeout_count": 0,
+        "infrastructure_failure_rate": 0.0,
+        "infrastructure_failures": 0,
+        "median_changed_files": 2.0,
+        "median_correction_rounds": 2.0,
+        "median_duration_seconds": 67.50699619999978,
+        "median_llm_calls": 12.0,
+        "median_total_tokens": 13622.0,
+        "planning_failure_rate": 0.0,
+        "process_isolated_tasks": 17,
+        "resolve_rate": 0.9411764705882353,
+        "review_failure_rate": 0.5882352941176471,
+        "tasks_entering_correction": 13,
+        "tasks_regressed_after_correction": 1,
+        "tasks_rescued_by_correction": 1,
+        "tasks_resolved": 16,
+        "tasks_total": 17,
+        "tasks_using_correction": 13,
+        "telemetry_incomplete_tasks": 0,
+        "tokens_per_resolved_task": 15528.625,
+        "tokens_per_task": 14615.176470588236,
+        "total_input_tokens": 210846,
+        "total_llm_calls": 201,
+        "total_output_tokens": 37612,
+        "total_tokens": 248458,
+        "verification_failure_rate": 0.058823529411764705
+      },
+      "regraded_with_different_evaluator": false,
+      "regressed_task_ids": [
+        "registry-alias-collision"
+      ],
+      "rescued_task_ids": [
+        "subscription-listener-removal"
+      ],
+      "tasks_entering_correction": 13,
+      "tasks_regressed_after_correction": 1,
+      "tasks_rescued_by_correction": 1
+    }
+  },
+  "full_correction_matrix": [
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "batch-rollback-state",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "dependency-load-order",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "domain-timezone-serialization",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "email-domain-policy",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "event-retry-deduplication",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "inventory-reservation-atomicity",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "invoice-rounding-policy",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "nested-secret-redaction",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "pagination-zero-cursor",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "permission-parent-inheritance",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "record-parser-contract",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": false,
+      "regressed": false,
+      "rescued": true,
+      "task_id": "registry-alias-collision",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "retry-idempotency-key",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "session-refresh-persistence",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "settings-source-precedence",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": false,
+      "final_resolved": true,
+      "first_attempt_resolved": true,
+      "regressed": false,
+      "rescued": false,
+      "task_id": "specific-route-precedence",
+      "unchanged_failure": false
+    },
+    {
+      "entered_correction": true,
+      "final_resolved": true,
+      "first_attempt_resolved": false,
+      "regressed": false,
+      "rescued": true,
+      "task_id": "subscription-listener-removal",
+      "unchanged_failure": false
+    }
+  ],
+  "h2_3d_protocol_metrics": {
+    "full": {
+      "attempted_distinct_tasks": 17,
+      "capability_resolve_rate": 1.0,
+      "end_to_end_resolve_rate": 1.0,
+      "infrastructure_failure_rate": 0.0,
+      "planned_assigned_tasks": 17,
+      "valid_predictions": 17
+    },
+    "no_agentic_test": {
+      "attempted_distinct_tasks": 17,
+      "capability_resolve_rate": 0.9411764705882353,
+      "end_to_end_resolve_rate": 0.9411764705882353,
+      "infrastructure_failure_rate": 0.0,
+      "planned_assigned_tasks": 17,
+      "valid_predictions": 17
+    },
+    "no_correction": {
+      "attempted_distinct_tasks": 17,
+      "capability_resolve_rate": 0.9411764705882353,
+      "end_to_end_resolve_rate": 0.9411764705882353,
+      "infrastructure_failure_rate": 0.0,
+      "planned_assigned_tasks": 17,
+      "valid_predictions": 17
+    },
+    "no_exploration": {
+      "attempted_distinct_tasks": 17,
+      "capability_resolve_rate": 0.9411764705882353,
+      "end_to_end_resolve_rate": 0.9411764705882353,
+      "infrastructure_failure_rate": 0.0,
+      "planned_assigned_tasks": 17,
+      "valid_predictions": 17
+    }
+  },
+  "paired": {
+    "no_agentic_test": {
+      "assigned_pairs": 17,
+      "capability_delta": 0.058823529411764705,
+      "capability_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.058823529411764705,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 0.17647058823529413
+      },
+      "comparable_pairs": 17,
+      "end_to_end_delta": 0.058823529411764705,
+      "not_comparable_pairs": 0,
+      "task_matrix": [
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "batch-rollback-state"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "dependency-load-order"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "domain-timezone-serialization"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "email-domain-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "event-retry-deduplication"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "inventory-reservation-atomicity"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "invoice-rounding-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "nested-secret-redaction"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "pagination-zero-cursor"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "permission-parent-inheritance"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "record-parser-contract"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 1,
+          "comparable": true,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 1,
+          "reason": null,
+          "task_id": "registry-alias-collision"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "retry-idempotency-key"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "session-refresh-persistence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "settings-source-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "specific-route-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "subscription-listener-removal"
+        }
+      ]
+    },
+    "no_correction": {
+      "assigned_pairs": 17,
+      "capability_delta": 0.058823529411764705,
+      "capability_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.058823529411764705,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 0.17647058823529413
+      },
+      "comparable_pairs": 17,
+      "end_to_end_delta": 0.058823529411764705,
+      "not_comparable_pairs": 0,
+      "task_matrix": [
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "batch-rollback-state"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "dependency-load-order"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "domain-timezone-serialization"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "email-domain-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "event-retry-deduplication"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "inventory-reservation-atomicity"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "invoice-rounding-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "nested-secret-redaction"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "pagination-zero-cursor"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "permission-parent-inheritance"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "record-parser-contract"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 1,
+          "comparable": true,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 1,
+          "reason": null,
+          "task_id": "registry-alias-collision"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "retry-idempotency-key"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "session-refresh-persistence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "settings-source-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "specific-route-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "subscription-listener-removal"
+        }
+      ]
+    },
+    "no_exploration": {
+      "assigned_pairs": 17,
+      "capability_delta": 0.058823529411764705,
+      "capability_delta_95_ci": {
+        "confidence_level": 0.95,
+        "lower": 0.0,
+        "point_estimate": 0.058823529411764705,
+        "resamples": 10000,
+        "sample_size": 17,
+        "seed": 20260904,
+        "upper": 0.17647058823529413
+      },
+      "comparable_pairs": 17,
+      "end_to_end_delta": 0.058823529411764705,
+      "not_comparable_pairs": 0,
+      "task_matrix": [
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "batch-rollback-state"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "dependency-load-order"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "domain-timezone-serialization"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "email-domain-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "event-retry-deduplication"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "inventory-reservation-atomicity"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "invoice-rounding-policy"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "nested-secret-redaction"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "pagination-zero-cursor"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "permission-parent-inheritance"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "record-parser-contract"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 1,
+          "comparable": true,
+          "comparison_resolved": false,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 1,
+          "reason": null,
+          "task_id": "registry-alias-collision"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "retry-idempotency-key"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "session-refresh-persistence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "settings-source-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "specific-route-precedence"
+        },
+        {
+          "baseline_resolved": true,
+          "baseline_valid_prediction": true,
+          "capability_delta": 0,
+          "comparable": true,
+          "comparison_resolved": true,
+          "comparison_valid_prediction": true,
+          "end_to_end_delta": 0,
+          "reason": null,
+          "task_id": "subscription-listener-removal"
+        }
+      ]
+    }
+  },
+  "paired_counts": {
+    "no_agentic_test": {
+      "ablation_wins": 0,
+      "comparable_pairs": 17,
+      "excluded_infrastructure_pairs": 0,
+      "excluded_non_candidate_pairs": 0,
+      "full_wins": 1,
+      "resolved_ties": 16,
+      "unresolved_ties": 0
+    },
+    "no_correction": {
+      "ablation_wins": 0,
+      "comparable_pairs": 17,
+      "excluded_infrastructure_pairs": 0,
+      "excluded_non_candidate_pairs": 0,
+      "full_wins": 1,
+      "resolved_ties": 16,
+      "unresolved_ties": 0
+    },
+    "no_exploration": {
+      "ablation_wins": 0,
+      "comparable_pairs": 17,
+      "excluded_infrastructure_pairs": 0,
+      "excluded_non_candidate_pairs": 0,
+      "full_wins": 1,
+      "resolved_ties": 16,
+      "unresolved_ties": 0
+    }
+  },
+  "paired_matrix": [
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "batch-rollback-state"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "dependency-load-order"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "domain-timezone-serialization"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "email-domain-policy"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "event-retry-deduplication"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "inventory-reservation-atomicity"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "invoice-rounding-policy"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "nested-secret-redaction"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "pagination-zero-cursor"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "permission-parent-inheritance"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "record-parser-contract"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "U",
+      "no_correction": "U",
+      "no_exploration": "U",
+      "task_id": "registry-alias-collision"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "retry-idempotency-key"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "session-refresh-persistence"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "settings-source-precedence"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "specific-route-precedence"
+    },
+    {
+      "full": "R",
+      "no_agentic_test": "R",
+      "no_correction": "R",
+      "no_exploration": "R",
+      "task_id": "subscription-listener-removal"
+    }
+  ],
+  "small_n_statement": "This is a controlled exploratory benchmark.",
+  "status": "complete",
+  "stop_reason": null,
+  "unavailable_regrades": []
+}

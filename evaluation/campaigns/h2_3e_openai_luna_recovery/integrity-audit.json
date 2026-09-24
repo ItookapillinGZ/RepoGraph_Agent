@@ -1,0 +1,10 @@
+{
+  "attempts": 70,
+  "campaign_id": "h2_3d_openai_luna",
+  "candidate_snapshots": 115,
+  "experiments": 4,
+  "issues": [],
+  "passed": true,
+  "preserved_partial_snapshots": 3,
+  "results": 68
+}

@@ -1,0 +1,38 @@
+{
+  "campaign_id": "h2_3d_openai_luna",
+  "configuration": "no_agentic_test",
+  "experiment": {
+    "config": {
+      "agentic_explore": true,
+      "agentic_test": false,
+      "evaluator_timeout_seconds": 300.0,
+      "llm_execution_kind": "live",
+      "max_correction_rounds": 2,
+      "max_evaluator_output_chars": 20000,
+      "max_tasks": null,
+      "model_base_url": "https://api.openai.com/v1",
+      "model_max_completion_tokens": 8192,
+      "model_name": "gpt-5.6-luna",
+      "model_provider": "openai_compatible",
+      "model_reasoning_effort": "none",
+      "model_seed": null,
+      "model_temperature": 0.0,
+      "name": "no_agentic_test",
+      "overall_timeout_seconds": null,
+      "run_tests": true,
+      "self_correct": true,
+      "task_timeout_seconds": 900.0
+    },
+    "configured_model_name": "gpt-5.6-luna",
+    "created_at": "2026-09-13T07:29:31.242379+00:00",
+    "dataset": "local:C:\\Users\\黄家乐\\Desktop\\02-code-review-agent\\.evaluation\\h2_3_benchmark\\h2-3-local-v1.jsonl",
+    "git_commit": null,
+    "id": "h2-3d-openai-luna-no-agentic-test-e3ddc14b55e2",
+    "llm_execution_kind": "live",
+    "model_name": "gpt-5.6-luna",
+    "name": "h2-3d-openai-luna-no-agentic-test"
+  },
+  "infrastructure_retry_limit": 1,
+  "maximum_live_task_runs": 80,
+  "workers": 1
+}
