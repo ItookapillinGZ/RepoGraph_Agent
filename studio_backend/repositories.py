@@ -24,13 +24,21 @@ class WorkspaceRepositories:
 
     def list(self) -> list[RepositorySummary]:
         repositories: list[RepositorySummary] = []
+        if (self._root / ".git").exists():
+            repositories.append(
+                RepositorySummary(
+                    id=".",
+                    name=self._root.name,
+                    git_repository=True,
+                )
+            )
         try:
             children = sorted(self._root.iterdir(), key=lambda item: item.name.lower())
         except OSError:
             return repositories
         for child in children:
             try:
-                if _is_link_like(child) or not child.is_dir():
+                if child.name == ".git" or _is_link_like(child) or not child.is_dir():
                     continue
                 resolved = child.resolve(strict=True)
                 if resolved.parent != self._root:
@@ -50,10 +58,16 @@ class WorkspaceRepositories:
         if not isinstance(repository_id, str) or not repository_id.strip():
             raise RepositoryBoundaryError("Unknown repository.")
         identifier = repository_id.strip()
+        if identifier == ".":
+            if (self._root / ".git").exists():
+                return self._root
+            raise RepositoryBoundaryError("Unknown repository.")
+        if identifier == ".git":
+            raise RepositoryBoundaryError("Unknown repository.")
         candidate_input = PurePath(identifier)
         if (
             candidate_input.is_absolute()
-            or identifier in {".", ".."}
+            or identifier == ".."
             or "/" in identifier
             or "\\" in identifier
             or ":" in identifier

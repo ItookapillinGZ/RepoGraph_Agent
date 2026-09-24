@@ -150,7 +150,12 @@ uses:
 - FastAPI backend on port 8000 by default
 - Next.js frontend on port 3000 by default
 - local SQLite state outside the configured workspace
-- Docker for secure repository-controlled verification
+- host-side verification for trusted local repositories
+
+The launcher selects the RepoGraph directory by default, and Studio lists it
+when it is a Git repository. To work on another local repository, set
+`REPOGRAPH_WORKSPACE_ROOT` to that repository or its parent before starting
+Studio.
 
 ## Sandbox quickstart
 

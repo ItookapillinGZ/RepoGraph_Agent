@@ -78,6 +78,23 @@ class WorkspaceRepositoryTests(unittest.TestCase):
     def test_resolves_known_repository(self) -> None:
         self.assertEqual(self.boundary.resolve("example"), self.repository.resolve())
 
+    def test_lists_and_resolves_workspace_root_when_it_is_git_repository(self) -> None:
+        (self.root / ".git").mkdir()
+        self.assertEqual(
+            [item.model_dump() for item in self.boundary.list()],
+            [
+                {"id": ".", "name": self.root.name, "git_repository": True},
+                {"id": "example", "name": "example", "git_repository": True},
+            ],
+        )
+        self.assertEqual(self.boundary.resolve("."), self.root.resolve())
+        with self.assertRaises(RepositoryBoundaryError):
+            self.boundary.resolve(".git")
+
+    def test_workspace_root_without_git_is_not_selectable(self) -> None:
+        with self.assertRaises(RepositoryBoundaryError):
+            self.boundary.resolve(".")
+
     def test_absolute_path_is_rejected(self) -> None:
         with self.assertRaises(RepositoryBoundaryError):
             self.boundary.resolve(str(self.repository.resolve()))

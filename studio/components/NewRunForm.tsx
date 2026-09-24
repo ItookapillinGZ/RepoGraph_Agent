@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { FormEvent, useEffect, useState } from "react";
 
-import { createRun, getRepositories, getRuns } from "@/lib/api";
+import { API_BASE, createRun, getRepositories, getRuns } from "@/lib/api";
 import type { RepositorySummary, StudioRun } from "@/lib/types";
 
 export function NewRunForm() {
@@ -14,18 +14,24 @@ export function NewRunForm() {
   const [selfCorrect, setSelfCorrect] = useState(true);
   const [rounds, setRounds] = useState(2);
   const [loading, setLoading] = useState(true);
+  const [runsLoading, setRunsLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [repositoryError, setRepositoryError] = useState("");
+  const [runsError, setRunsError] = useState("");
 
   useEffect(() => {
-    Promise.all([getRepositories(), getRuns()])
-      .then(([repositoryData, runData]) => {
+    getRepositories()
+      .then((repositoryData) => {
         setRepositories(repositoryData);
-        setRuns(runData);
         if (repositoryData.length) setRepositoryId(repositoryData[0].id);
       })
-      .catch((caught: Error) => setError(caught.message))
+      .catch(() => setRepositoryError(`Could not load repositories from ${API_BASE}. Check the backend connection and refresh.`))
       .finally(() => setLoading(false));
+    getRuns()
+      .then(setRuns)
+      .catch(() => setRunsError("Could not load recent runs. Check the backend connection and refresh."))
+      .finally(() => setRunsLoading(false));
   }, []);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -59,10 +65,10 @@ export function NewRunForm() {
             <select
               value={repositoryId}
               onChange={(event) => setRepositoryId(event.target.value)}
-              disabled={loading || submitting}
+              disabled={loading || submitting || Boolean(repositoryError)}
               required
             >
-              {!repositories.length && <option value="">No repositories available</option>}
+              {!repositories.length && <option value="">{repositoryError ? "Could not load repositories" : "No repositories available"}</option>}
               {repositories.map((repository) => (
                 <option key={repository.id} value={repository.id}>
                   {repository.name}{repository.git_repository ? " · Git" : ""}
@@ -70,6 +76,7 @@ export function NewRunForm() {
               ))}
             </select>
           </label>
+          {repositoryError && <p className="error-banner" role="alert">{repositoryError}</p>}
           <label>
             Engineering task
             <textarea
@@ -117,8 +124,9 @@ export function NewRunForm() {
           <span className="count-badge">{runs.length}</span>
         </div>
         <div className="run-list">
-          {loading && <p className="empty-state">Loading workspace runs…</p>}
-          {!loading && !runs.length && <p className="empty-state">No runs yet. Your first verified change set will appear here.</p>}
+          {runsLoading && <p className="empty-state">Loading workspace runs…</p>}
+          {runsError && <p className="empty-state" role="alert">{runsError}</p>}
+          {!runsLoading && !runsError && !runs.length && <p className="empty-state">No runs yet. Your first verified change set will appear here.</p>}
           {runs.map((run) => (
             <Link className="run-row" href={`/runs/${run.id}`} key={run.id}>
               <div className="run-row-top"><strong>{run.repository_id}</strong><span className={`status-chip status-${run.status}`}>{run.status}</span></div>
