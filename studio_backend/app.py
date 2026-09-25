@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Callable
 from contextlib import asynccontextmanager
 from dataclasses import dataclass
+from urllib.parse import urlsplit
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -31,6 +32,15 @@ class StudioServices:
     recovery_service_factory: Callable[
         [StudioStorage, WorkspaceRepositories], StudioRecoveryService
     ] | None = None
+
+
+def _cors_origins(origin: str) -> list[str]:
+    parsed = urlsplit(origin)
+    if parsed.hostname not in {"localhost", "127.0.0.1"} or parsed.username is not None:
+        return [origin]
+    other_host = "127.0.0.1" if parsed.hostname == "localhost" else "localhost"
+    port = f":{parsed.port}" if parsed.port is not None else ""
+    return [origin, f"{parsed.scheme}://{other_host}{port}"]
 
 
 def create_app(
@@ -83,7 +93,7 @@ def create_app(
     application.state.recovery = recovery
     application.add_middleware(
         CORSMiddleware,
-        allow_origins=[resolved.allowed_origin],
+        allow_origins=_cors_origins(resolved.allowed_origin),
         allow_credentials=False,
         allow_methods=["GET", "POST"],
         allow_headers=["Content-Type"],

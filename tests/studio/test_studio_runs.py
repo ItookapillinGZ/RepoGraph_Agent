@@ -184,15 +184,23 @@ class StudioRunApiTests(unittest.TestCase):
         self.assertNotIn("studio-super-secret", artifact_response.text)
         self.assertNotIn(str(self.workspace), artifact_response.text)
 
-    def test_cors_uses_only_configured_origin(self) -> None:
+    def test_cors_accepts_both_loopback_names_on_configured_port(self) -> None:
+        for origin in ("http://localhost:3000", "http://127.0.0.1:3000"):
+            with self.subTest(origin=origin):
+                response = self.client.options(
+                    "/api/health",
+                    headers={
+                        "Origin": origin,
+                        "Access-Control-Request-Method": "GET",
+                    },
+                )
+                self.assertEqual(response.headers["access-control-allow-origin"], origin)
+
         response = self.client.options(
             "/api/health",
             headers={
-                "Origin": "http://localhost:3000",
+                "Origin": "http://127.0.0.1:3001",
                 "Access-Control-Request-Method": "GET",
             },
         )
-        self.assertEqual(
-            response.headers["access-control-allow-origin"],
-            "http://localhost:3000",
-        )
+        self.assertNotIn("access-control-allow-origin", response.headers)
