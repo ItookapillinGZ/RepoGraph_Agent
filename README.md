@@ -13,6 +13,10 @@ The default portfolio demo is deterministic, offline, preview-only, and uses
 the real hardened Docker sandbox. A live model is optional and may incur API
 charges.
 
+## Studio preview
+
+![RepoGraph Studio dashboard with repository selection, local folder entry, and an engineering task](docs/images/studio-dashboard.png)
+
 ## Key capabilities
 
 - Repository-aware exploration and task-grounded planning
