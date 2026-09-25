@@ -152,10 +152,11 @@ uses:
 - local SQLite state outside the configured workspace
 - host-side verification for trusted local repositories
 
-The launcher selects the RepoGraph directory by default, and Studio lists it
-when it is a Git repository. To work on another local repository, set
-`REPOGRAPH_WORKSPACE_ROOT` to that repository or its parent before starting
-Studio.
+The launcher selects the RepoGraph directory by default. To work on another
+local project, click **Add a local project folder** under **Repository** and
+paste its full folder path. Studio remembers added folders in its local data
+directory, so they remain selectable after a restart. The folder must exist on
+the same computer as the Studio backend.
 
 ## Sandbox quickstart
 

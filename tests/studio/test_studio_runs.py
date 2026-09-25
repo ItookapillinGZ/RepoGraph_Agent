@@ -109,6 +109,20 @@ class StudioRunApiTests(unittest.TestCase):
         self.assertNotIn(str(self.workspace), rendered)
         self.assertEqual(response.json()["repositories"][0]["id"], "example")
 
+    def test_user_can_add_external_project_and_run_it(self) -> None:
+        external = self.workspace.parent / "other-project"
+        external.mkdir()
+        added = self.client.post("/api/repositories", json={"path": str(external)})
+        self.assertEqual(added.status_code, 201)
+        identifier = added.json()["id"]
+        self.assertTrue(identifier.startswith("added-"))
+        self.assertNotIn(str(external), added.text)
+        listing = self.client.get("/api/repositories").json()["repositories"]
+        self.assertIn(identifier, [item["id"] for item in listing])
+        run = self._create(repository_id=identifier)
+        self.assertEqual(run.status_code, 202)
+        self._wait_verified(run.json()["run_id"])
+
     def test_run_schema_forbids_extra_fields(self) -> None:
         with self.assertRaises(ValidationError):
             StartRunRequest.model_validate(

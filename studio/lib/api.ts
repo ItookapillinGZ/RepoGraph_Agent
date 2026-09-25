@@ -31,6 +31,13 @@ export async function getRepositories(): Promise<RepositorySummary[]> {
   return response.repositories;
 }
 
+export async function registerRepository(path: string): Promise<RepositorySummary> {
+  return requestJson<RepositorySummary>("/api/repositories", {
+    method: "POST",
+    body: JSON.stringify({ path }),
+  });
+}
+
 export async function getRuns(): Promise<StudioRun[]> {
   const response = await requestJson<{ runs: StudioRun[] }>("/api/runs");
   return response.runs;

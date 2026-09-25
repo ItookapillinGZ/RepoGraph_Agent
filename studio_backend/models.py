@@ -61,6 +61,10 @@ class RepositoryListResponse(StrictModel):
     repositories: list[RepositorySummary]
 
 
+class RegisterRepositoryRequest(StrictModel):
+    path: str = Field(min_length=1, max_length=1024)
+
+
 class StudioRun(StrictModel):
     id: str
     repository_id: str

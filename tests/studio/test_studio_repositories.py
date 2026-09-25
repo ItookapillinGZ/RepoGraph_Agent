@@ -116,3 +116,26 @@ class WorkspaceRepositoryTests(unittest.TestCase):
         self.assertNotIn("linked", [item.id for item in self.boundary.list()])
         with self.assertRaises(RepositoryBoundaryError):
             self.boundary.resolve("linked")
+
+    def test_registered_folder_persists_and_resolves_after_restart(self) -> None:
+        external = self.root.parent / f"{self.root.name}-external"
+        external.mkdir()
+        try:
+            catalog = self.root / "repositories.json"
+            boundary = WorkspaceRepositories(self.root, catalog)
+            added = boundary.register(str(external))
+            self.assertTrue(added.id.startswith("added-"))
+            self.assertEqual(boundary.resolve(added.id), external.resolve())
+            restarted = WorkspaceRepositories(self.root, catalog)
+            self.assertIn(added.id, [item.id for item in restarted.list()])
+            self.assertEqual(restarted.resolve(added.id), external.resolve())
+            self.assertNotIn(str(external), str([item.model_dump() for item in restarted.list()]))
+        finally:
+            external.rmdir()
+
+    def test_registration_rejects_relative_and_missing_folders(self) -> None:
+        boundary = WorkspaceRepositories(self.root, self.root / "repositories.json")
+        with self.assertRaises(RepositoryBoundaryError):
+            boundary.register("example")
+        with self.assertRaises(RepositoryBoundaryError):
+            boundary.register(str(self.root / "missing"))

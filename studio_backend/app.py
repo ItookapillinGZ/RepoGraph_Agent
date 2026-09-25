@@ -51,7 +51,7 @@ def create_app(
     resolved = config or StudioConfig.from_env()
     selected_services = services or StudioServices()
     database = StudioStorage(resolved.database_path)
-    boundary = WorkspaceRepositories(resolved.workspace_root)
+    boundary = WorkspaceRepositories(resolved.workspace_root, resolved.data_dir / "repositories.json")
     recovery = (
         selected_services.recovery_service_factory(database, boundary)
         if selected_services.recovery_service_factory is not None

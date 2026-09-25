@@ -3,13 +3,17 @@
 import Link from "next/link";
 import { FormEvent, useEffect, useState } from "react";
 
-import { API_BASE, createRun, getRepositories, getRuns } from "@/lib/api";
+import { API_BASE, createRun, getRepositories, getRuns, registerRepository } from "@/lib/api";
 import type { RepositorySummary, StudioRun } from "@/lib/types";
 
 export function NewRunForm() {
   const [repositories, setRepositories] = useState<RepositorySummary[]>([]);
   const [runs, setRuns] = useState<StudioRun[]>([]);
   const [repositoryId, setRepositoryId] = useState("");
+  const [newRepositoryPath, setNewRepositoryPath] = useState("");
+  const [showAddRepository, setShowAddRepository] = useState(false);
+  const [addingRepository, setAddingRepository] = useState(false);
+  const [addRepositoryError, setAddRepositoryError] = useState("");
   const [task, setTask] = useState("");
   const [selfCorrect, setSelfCorrect] = useState(true);
   const [rounds, setRounds] = useState(2);
@@ -25,6 +29,7 @@ export function NewRunForm() {
       .then((repositoryData) => {
         setRepositories(repositoryData);
         if (repositoryData.length) setRepositoryId(repositoryData[0].id);
+        else setShowAddRepository(true);
       })
       .catch(() => setRepositoryError(`Could not load repositories from ${API_BASE}. Check the backend connection and refresh.`))
       .finally(() => setLoading(false));
@@ -33,6 +38,25 @@ export function NewRunForm() {
       .catch(() => setRunsError("Could not load recent runs. Check the backend connection and refresh."))
       .finally(() => setRunsLoading(false));
   }, []);
+
+  async function addRepository() {
+    if (!newRepositoryPath.trim()) return;
+    setAddRepositoryError("");
+    setAddingRepository(true);
+    try {
+      const added = await registerRepository(newRepositoryPath.trim());
+      const updated = await getRepositories();
+      setRepositories(updated);
+      setRepositoryId(added.id);
+      setNewRepositoryPath("");
+      setShowAddRepository(false);
+      setRepositoryError("");
+    } catch (caught) {
+      setAddRepositoryError(caught instanceof Error ? caught.message : "Could not add this folder.");
+    } finally {
+      setAddingRepository(false);
+    }
+  }
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -77,6 +101,45 @@ export function NewRunForm() {
             </select>
           </label>
           {repositoryError && <p className="error-banner" role="alert">{repositoryError}</p>}
+          <div className="add-repository-section">
+            <button
+              type="button"
+              className="add-repository-toggle"
+              aria-expanded={showAddRepository}
+              onClick={() => setShowAddRepository(!showAddRepository)}
+            >
+              {showAddRepository ? "− Hide folder entry" : "+ Add a local project folder"}
+            </button>
+            {showAddRepository && (
+              <div className="add-repository-box">
+                <label htmlFor="new-repository-path">Project folder path</label>
+                <div className="add-repository-row">
+                  <input
+                    id="new-repository-path"
+                    type="text"
+                    value={newRepositoryPath}
+                    onChange={(event) => setNewRepositoryPath(event.target.value)}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter") {
+                        event.preventDefault();
+                        void addRepository();
+                      }
+                    }}
+                    placeholder="C:\\Users\\you\\Desktop\\my-project"
+                    autoComplete="off"
+                    spellCheck={false}
+                    maxLength={1024}
+                    disabled={addingRepository}
+                  />
+                  <button type="button" className="ghost-button" onClick={addRepository} disabled={addingRepository || !newRepositoryPath.trim()}>
+                    {addingRepository ? "Adding…" : "Add folder"}
+                  </button>
+                </div>
+                <p>Paste the full path of a folder on this computer. It will appear in the list above next time too.</p>
+                {addRepositoryError && <p className="error-banner" role="alert">{addRepositoryError}</p>}
+              </div>
+            )}
+          </div>
           <label>
             Engineering task
             <textarea
@@ -129,7 +192,7 @@ export function NewRunForm() {
           {!runsLoading && !runsError && !runs.length && <p className="empty-state">No runs yet. Your first verified change set will appear here.</p>}
           {runs.map((run) => (
             <Link className="run-row" href={`/runs/${run.id}`} key={run.id}>
-              <div className="run-row-top"><strong>{run.repository_id}</strong><span className={`status-chip status-${run.status}`}>{run.status}</span></div>
+              <div className="run-row-top"><strong>{repositories.find((repository) => repository.id === run.repository_id)?.name ?? run.repository_id}</strong><span className={`status-chip status-${run.status}`}>{run.status}</span></div>
               <p>{run.task}</p>
               <div className="run-row-meta"><span>{run.phase.replaceAll("_", " ")}</span><time>{new Date(run.created_at).toLocaleString()}</time></div>
             </Link>
